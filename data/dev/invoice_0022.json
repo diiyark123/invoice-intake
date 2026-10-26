@@ -1,0 +1,43 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Coastal Logistics LLP",
+  "invoice_number": "0282707",
+  "invoice_date": "2026-10-19",
+  "due_date": "2026-12-18",
+  "currency": "INR",
+  "subtotal": "14456.62",
+  "tax": "1734.80",
+  "total": "16191.42",
+  "line_items": [
+    {
+      "description": "Nitrile safety gloves",
+      "quantity": "10",
+      "unit_price": "83.16",
+      "amount": "831.60"
+    },
+    {
+      "description": "Copper wire 2.5 sq mm",
+      "quantity": "243",
+      "unit_price": "44.49",
+      "amount": "10811.07"
+    },
+    {
+      "description": "Pallet wooden 1200x1000",
+      "quantity": "3",
+      "unit_price": "854.25",
+      "amount": "2562.75"
+    },
+    {
+      "description": "Floor cleaning liquid 1L",
+      "quantity": "1",
+      "unit_price": "167.48",
+      "amount": "167.48"
+    },
+    {
+      "description": "Canteen meal vouchers",
+      "quantity": "1",
+      "unit_price": "83.72",
+      "amount": "83.72"
+    }
+  ]
+}

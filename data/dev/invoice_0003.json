@@ -1,0 +1,31 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Orbit Courier Services Pvt Ltd",
+  "invoice_number": "0173975",
+  "invoice_date": "2026-03-07",
+  "due_date": "2026-04-06",
+  "currency": "INR",
+  "subtotal": "46302.27",
+  "tax": "5556.28",
+  "total": "51858.55",
+  "line_items": [
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "136.5",
+      "unit_price": "72.06",
+      "amount": "9836.19"
+    },
+    {
+      "description": "Hex bolt M10 x 50 (box of 100)",
+      "quantity": "50",
+      "unit_price": "714.14",
+      "amount": "35707.00"
+    },
+    {
+      "description": "Floor cleaning liquid 1L",
+      "quantity": "4",
+      "unit_price": "189.77",
+      "amount": "759.08"
+    }
+  ]
+}

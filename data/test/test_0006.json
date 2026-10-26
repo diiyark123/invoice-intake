@@ -1,0 +1,55 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Lotus Printing Press",
+  "invoice_number": "INV00732",
+  "invoice_date": "2026-02-04",
+  "due_date": "2026-03-06",
+  "currency": "INR",
+  "subtotal": "58379.29",
+  "tax": "7005.52",
+  "total": "65384.81",
+  "line_items": [
+    {
+      "description": "Pallet wooden 1200x1000",
+      "quantity": "50",
+      "unit_price": "919.55",
+      "amount": "45977.50"
+    },
+    {
+      "description": "Hex bolt M10 x 50 (box of 100)",
+      "quantity": "2",
+      "unit_price": "714.51",
+      "amount": "1429.02"
+    },
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "1",
+      "unit_price": "2041.61",
+      "amount": "2041.61"
+    },
+    {
+      "description": "Fire extinguisher refill 4kg",
+      "quantity": "1",
+      "unit_price": "845.71",
+      "amount": "845.71"
+    },
+    {
+      "description": "Packing tape 48mm x 65m",
+      "quantity": "20",
+      "unit_price": "60.38",
+      "amount": "1207.60"
+    },
+    {
+      "description": "Stretch wrap film 500mm",
+      "quantity": "1",
+      "unit_price": "749.85",
+      "amount": "749.85"
+    },
+    {
+      "description": "Nitrile safety gloves",
+      "quantity": "100",
+      "unit_price": "61.28",
+      "amount": "6128.00"
+    }
+  ]
+}

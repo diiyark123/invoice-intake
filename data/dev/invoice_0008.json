@@ -1,0 +1,25 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Riverstone Furniture Co",
+  "invoice_number": "INV08726",
+  "invoice_date": "2026-05-26",
+  "due_date": null,
+  "currency": "INR",
+  "subtotal": "21082.96",
+  "tax": "3794.94",
+  "total": "24877.90",
+  "line_items": [
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "5",
+      "unit_price": "4180.94",
+      "amount": "20904.70"
+    },
+    {
+      "description": "Canteen meal vouchers",
+      "quantity": "2",
+      "unit_price": "89.13",
+      "amount": "178.26"
+    }
+  ]
+}

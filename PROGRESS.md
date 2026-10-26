@@ -1,0 +1,26 @@
+# Progress
+
+Update this file at the end of every milestone: status, date, what was verified, what is still pending.
+
+| Milestone | Status | Date | Notes |
+|---|---|---|---|
+| M0 — Handoff pack (spec, CLAUDE.md, playbook, config files) | ✅ done | 2026-10-26 | Created on a locked-down machine with no Docker. Config files (`docker-compose.yml`, `Dockerfile`, `pyproject.toml`) were written but **not run yet**. |
+| M1 — Skeleton + dataset | ✅ done | 2026-10-26 | Verified in Docker: all 3 containers start; `/health` → `{"status":"ok","database":"ok"}`; UI returns HTTP 200; migration creates all 9 tables (`\dt`), downgrade + upgrade works; seed run twice (2nd run adds 0 rows); generator wrote 20 invoices (10 PDF, 10 scanned JPG) + 20 labels to `data/dev`; synthetic test set: 25 files incl. 5 seeded duplicates; `pytest` 13 passed. D2 confirmed (`extractions.duplicate_of_document_id`). |
+| M2 — Extraction pipeline | ✅ done | 2026-10-26 | Gemini `gemini-3.5-flash-lite` default, Claude provider as alternative (D16, D18). Verified live in Docker: uploaded a dev PDF and a scanned JPG via the API → both `needs_review`, 1 `extractions` row each, 24 `extracted_fields` rows each with page + source_text (47/48 grounded; currency on the scan has no printed match). Header fields 8/8 correct on both, all line amounts correct. Model, prompt version, tokens (~2,050 in / ~385 out) and cost (~$0.0016/invoice) stored. Corrupt PDF → `failed` with message, file kept, Retry re-runs + audit row; unsupported/oversized uploads rejected. `pytest` 102 passed, no real API calls. Added D17 (`extracted_fields.source_match` column, migration f0178a3cf308). |
+| M3 — Validation, duplicates, confidence, routing, baseline eval | ✅ done | 2026-10-27 | 9 rules, 4 duplicate checks, §10 confidence, router, `services/approval.py` as single writer (re-checks itself; auto + human paths). D19–D22 recorded. `pytest` 153 passed (incl. D9 static scan + approval refusals, every rule pass/fail, every duplicate kind + near-misses). **Baseline eval saved:** `eval/results/20261026T184928Z.json` (gemini-3.5-flash-lite, extract_v1, threshold 0.85, synthetic-only test set of 25): field accuracy 99.84% (header 100%), auto-approval 60%, wrong fields in auto-approved 0.26% (1 OCR typo in a line description), duplicates 5/5, 0 false duplicate flags, 0 failures, 8.0 s avg, $0.0016/invoice → $3.20/month at 2,000. |
+| M4 — Review UI + audit | ✅ done (1 check pending) | 2026-10-27 | `api/review.py` (queue, PATCH fields, approve, reject) + Streamlit login, Upload, Review queue, Review invoice (boxes on page image, confidence badges, rule messages, editable lines, duplicate side-by-side), manager placeholders hidden from clerks. `pytest` 170 passed incl. 12 headless UI tests (AppTest) and review-API tests. Live check: edit → refused approve → fix → approve; 3 audit rows with the clerk's id; invoice written as `human`. **Pending:** the < 2 minute clerk timing must be done by a person in the browser. |
+| M5 — Iteration, dashboard, settings, second eval | ✅ done | 2026-10-27 | Dev set regenerated (60, half scanned, 10% unknown vendors). Error analysis on dev → prompt v2, typed-value grounding, currency fix, blur 40, Gemini retry (D24). Dev: auto 75% → 83%, wrong-in-auto 0.09% → 0%. Dashboard + Settings (API + UI, manager-only, audited). Threshold sweep in `run_eval`. **Second eval saved** `eval/results/20261026T195148Z.json`: accuracy 100%, auto 64% (design ceiling 68% on this set; 16/17 eligible), wrong-in-auto 0%, dups 5/5, 4.4 s, $0.00164/invoice. Targets table: `eval/results/M5_targets.md` (auto-approval target ❌, review time not measured). `pytest` 185 passed. |
+| M6 — Deploy + docs | ⏳ next | | |
+
+## Open items carried forward
+- ✅ Gemini API key is in `.env` (2026-10-26). Decision D16: Gemini default, Claude optional via `LLM_PROVIDER`.
+- Baseline is on a synthetic-only test set (25 of the planned 50). Add the ~15 public + ~10 photo samples before the M5 eval, and note that the numbers are then not directly comparable.
+- Observed (do NOT tune on test set; check on dev data in M5): line-item confidence doesn't affect auto-approval, so an OCR typo copied into a description slipped through. Duplicates also always add `low_confidence` (the §10 rule penalty), which is noisy in the reason list.
+- Eval results can't be committed yet: this folder is not its own git repository.
+- To do by hand: open http://localhost:8501, log in as the clerk, fix one flagged invoice and approve it with a stopwatch (target < 2 min). Record the time here.
+- The Claude provider is written and unit-checked against the SDK, but has not been called live (no Anthropic key).
+- Grounding allows spans longer than D7's 6 words when the value itself is longer (long line-item descriptions).
+- Test set is synthetic only (25 files). Still to add: ~15 public-dataset invoices (hand-labelled, check licence) and ~10 phone photos of printed synthetic invoices, to reach the spec's 50.
+- Port 8000 on the host is also used by another local `uvicorn server:app` (other project). Use http://[::1]:8000 or stop that process to reach this API at localhost:8000.
+- The UI placeholder was checked with HTTP 200 only, not visually in a browser.
+- Time 10 manual invoice entries by hand, to get the baseline for the evaluation report.

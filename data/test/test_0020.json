@@ -1,0 +1,25 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Bharat Packaging Co",
+  "invoice_number": "INV07471",
+  "invoice_date": "2026-04-13",
+  "due_date": "2026-05-28",
+  "currency": "INR",
+  "subtotal": "12310.58",
+  "tax": "1477.26",
+  "total": "13787.84",
+  "line_items": [
+    {
+      "description": "Packing tape 48mm x 65m",
+      "quantity": "10",
+      "unit_price": "42.95",
+      "amount": "429.50"
+    },
+    {
+      "description": "Pallet wooden 1200x1000",
+      "quantity": "12",
+      "unit_price": "990.09",
+      "amount": "11881.08"
+    }
+  ]
+}

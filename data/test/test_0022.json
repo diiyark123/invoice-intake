@@ -1,0 +1,19 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Bharat Packaging Co",
+  "invoice_number": "F-59328",
+  "invoice_date": "2026-05-31",
+  "due_date": "2026-07-30",
+  "currency": "INR",
+  "subtotal": "20542.32",
+  "tax": "3697.62",
+  "total": "24239.94",
+  "line_items": [
+    {
+      "description": "Pallet wooden 1200x1000",
+      "quantity": "24",
+      "unit_price": "855.93",
+      "amount": "20542.32"
+    }
+  ]
+}

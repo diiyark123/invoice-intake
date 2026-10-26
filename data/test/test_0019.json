@@ -1,0 +1,31 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Orbit Courier Services Pvt Ltd",
+  "invoice_number": "E-38336",
+  "invoice_date": "2026-01-23",
+  "due_date": "2026-02-07",
+  "currency": "INR",
+  "subtotal": "13990.72",
+  "tax": "2518.32",
+  "total": "16509.04",
+  "line_items": [
+    {
+      "description": "Safety helmet ISI marked",
+      "quantity": "2",
+      "unit_price": "189.31",
+      "amount": "378.62"
+    },
+    {
+      "description": "Hydraulic oil 68 grade",
+      "quantity": "6.4",
+      "unit_price": "249.39",
+      "amount": "1596.10"
+    },
+    {
+      "description": "A4 copier paper 75 GSM",
+      "quantity": "50",
+      "unit_price": "240.32",
+      "amount": "12016.00"
+    }
+  ]
+}

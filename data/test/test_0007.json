@@ -1,0 +1,61 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Kaveri Cleaning Supplies",
+  "invoice_number": "F-13380",
+  "invoice_date": "2026-04-26",
+  "due_date": "2026-06-10",
+  "currency": "INR",
+  "subtotal": "24604.16",
+  "tax": "1230.20",
+  "total": "25834.36",
+  "line_items": [
+    {
+      "description": "A4 copier paper 75 GSM",
+      "quantity": "4",
+      "unit_price": "253.83",
+      "amount": "1015.32"
+    },
+    {
+      "description": "Hydraulic oil 68 grade",
+      "quantity": "21.8",
+      "unit_price": "166.23",
+      "amount": "3623.81"
+    },
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "7.4",
+      "unit_price": "70.53",
+      "amount": "521.92"
+    },
+    {
+      "description": "Pallet wooden 1200x1000",
+      "quantity": "12",
+      "unit_price": "920.03",
+      "amount": "11040.36"
+    },
+    {
+      "description": "Fire extinguisher refill 4kg",
+      "quantity": "6",
+      "unit_price": "647.34",
+      "amount": "3884.04"
+    },
+    {
+      "description": "Floor cleaning liquid 1L",
+      "quantity": "12",
+      "unit_price": "122.22",
+      "amount": "1466.64"
+    },
+    {
+      "description": "Packing tape 48mm x 65m",
+      "quantity": "6",
+      "unit_price": "38.57",
+      "amount": "231.42"
+    },
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "1",
+      "unit_price": "2820.65",
+      "amount": "2820.65"
+    }
+  ]
+}

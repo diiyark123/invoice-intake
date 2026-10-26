@@ -1,0 +1,43 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Indus Fasteners Inc",
+  "invoice_number": "INV09195",
+  "invoice_date": "2026-05-18",
+  "due_date": "2026-06-02",
+  "currency": "INR",
+  "subtotal": "116741.64",
+  "tax": "14009.00",
+  "total": "130750.64",
+  "line_items": [
+    {
+      "description": "Safety helmet ISI marked",
+      "quantity": "1",
+      "unit_price": "314.88",
+      "amount": "314.88"
+    },
+    {
+      "description": "Industrial degreaser 5L",
+      "quantity": "100",
+      "unit_price": "986.91",
+      "amount": "98691.00"
+    },
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "6",
+      "unit_price": "1840.44",
+      "amount": "11042.64"
+    },
+    {
+      "description": "Hydraulic oil 68 grade",
+      "quantity": "34",
+      "unit_price": "178.53",
+      "amount": "6070.02"
+    },
+    {
+      "description": "Hex bolt M10 x 50 (box of 100)",
+      "quantity": "1",
+      "unit_price": "623.10",
+      "amount": "623.10"
+    }
+  ]
+}

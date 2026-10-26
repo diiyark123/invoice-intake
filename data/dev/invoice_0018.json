@@ -1,0 +1,55 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Deccan Office Solutions",
+  "invoice_number": "0004798",
+  "invoice_date": "2026-05-03",
+  "due_date": "2026-06-02",
+  "currency": "INR",
+  "subtotal": "28017.34",
+  "tax": "3362.08",
+  "total": "31379.42",
+  "line_items": [
+    {
+      "description": "Packing tape 48mm x 65m",
+      "quantity": "4",
+      "unit_price": "55.64",
+      "amount": "222.56"
+    },
+    {
+      "description": "Stretch wrap film 500mm",
+      "quantity": "2",
+      "unit_price": "386.30",
+      "amount": "772.60"
+    },
+    {
+      "description": "A4 copier paper 75 GSM",
+      "quantity": "1",
+      "unit_price": "302.40",
+      "amount": "302.40"
+    },
+    {
+      "description": "Corrugated carton box 18x12x10",
+      "quantity": "12",
+      "unit_price": "41.09",
+      "amount": "493.08"
+    },
+    {
+      "description": "Hex bolt M10 x 50 (box of 100)",
+      "quantity": "20",
+      "unit_price": "578.73",
+      "amount": "11574.60"
+    },
+    {
+      "description": "Safety helmet ISI marked",
+      "quantity": "50",
+      "unit_price": "276.02",
+      "amount": "13801.00"
+    },
+    {
+      "description": "Fire extinguisher refill 4kg",
+      "quantity": "1",
+      "unit_price": "851.10",
+      "amount": "851.10"
+    }
+  ]
+}

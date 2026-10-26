@@ -1,0 +1,43 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Ganga Electricals Pvt Ltd",
+  "invoice_number": "H-12898",
+  "invoice_date": "2026-08-09",
+  "due_date": null,
+  "currency": "INR",
+  "subtotal": "64913.96",
+  "tax": "3245.70",
+  "total": "68159.66",
+  "line_items": [
+    {
+      "description": "Floor cleaning liquid 1L",
+      "quantity": "24",
+      "unit_price": "107.50",
+      "amount": "2580.00"
+    },
+    {
+      "description": "Annual maintenance - printers",
+      "quantity": "4",
+      "unit_price": "8829.44",
+      "amount": "35317.76"
+    },
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "6",
+      "unit_price": "3016.12",
+      "amount": "18096.72"
+    },
+    {
+      "description": "Copper wire 2.5 sq mm",
+      "quantity": "22",
+      "unit_price": "38.34",
+      "amount": "843.48"
+    },
+    {
+      "description": "Nitrile safety gloves",
+      "quantity": "100",
+      "unit_price": "80.76",
+      "amount": "8076.00"
+    }
+  ]
+}

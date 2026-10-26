@@ -1,0 +1,55 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Riverstone Furniture Co",
+  "invoice_number": "INV-2026-7906",
+  "invoice_date": "2026-04-27",
+  "due_date": null,
+  "currency": "INR",
+  "subtotal": "97903.02",
+  "tax": "17622.54",
+  "total": "115525.56",
+  "line_items": [
+    {
+      "description": "Canteen meal vouchers",
+      "quantity": "100",
+      "unit_price": "75.00",
+      "amount": "7500.00"
+    },
+    {
+      "description": "A4 copier paper 75 GSM",
+      "quantity": "20",
+      "unit_price": "240.64",
+      "amount": "4812.80"
+    },
+    {
+      "description": "Hydraulic oil 68 grade",
+      "quantity": "81",
+      "unit_price": "163.19",
+      "amount": "13218.39"
+    },
+    {
+      "description": "Shrink sleeves printing",
+      "quantity": "10",
+      "unit_price": "8.33",
+      "amount": "83.30"
+    },
+    {
+      "description": "Corrugated carton box 18x12x10",
+      "quantity": "50",
+      "unit_price": "27.85",
+      "amount": "1392.50"
+    },
+    {
+      "description": "Annual maintenance - printers",
+      "quantity": "12",
+      "unit_price": "5795.10",
+      "amount": "69541.20"
+    },
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "17.1",
+      "unit_price": "79.23",
+      "amount": "1354.83"
+    }
+  ]
+}

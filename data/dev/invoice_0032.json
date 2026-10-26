@@ -1,0 +1,61 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Apex Industrial Supplies Pvt Ltd",
+  "invoice_number": "MS/25-26/9194",
+  "invoice_date": "2025-10-27",
+  "due_date": "2025-12-26",
+  "currency": "INR",
+  "subtotal": "28352.77",
+  "tax": "3402.34",
+  "total": "31755.11",
+  "line_items": [
+    {
+      "description": "Safety helmet ISI marked",
+      "quantity": "12",
+      "unit_price": "424.55",
+      "amount": "5094.60"
+    },
+    {
+      "description": "Nitrile safety gloves",
+      "quantity": "10",
+      "unit_price": "47.61",
+      "amount": "476.10"
+    },
+    {
+      "description": "Hex bolt M10 x 50 (box of 100)",
+      "quantity": "4",
+      "unit_price": "668.13",
+      "amount": "2672.52"
+    },
+    {
+      "description": "Industrial degreaser 5L",
+      "quantity": "5",
+      "unit_price": "1084.76",
+      "amount": "5423.80"
+    },
+    {
+      "description": "Fire extinguisher refill 4kg",
+      "quantity": "10",
+      "unit_price": "660.92",
+      "amount": "6609.20"
+    },
+    {
+      "description": "Shrink sleeves printing",
+      "quantity": "1",
+      "unit_price": "2.02",
+      "amount": "2.02"
+    },
+    {
+      "description": "Hydraulic oil 68 grade",
+      "quantity": "22.5",
+      "unit_price": "153.23",
+      "amount": "3447.68"
+    },
+    {
+      "description": "Pallet wooden 1200x1000",
+      "quantity": "5",
+      "unit_price": "925.37",
+      "amount": "4626.85"
+    }
+  ]
+}

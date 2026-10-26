@@ -1,0 +1,31 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Horizon IT Services",
+  "invoice_number": "MS/26-27/5927",
+  "invoice_date": "2026-02-22",
+  "due_date": "2026-03-09",
+  "currency": "INR",
+  "subtotal": "35100.38",
+  "tax": "6318.06",
+  "total": "41418.44",
+  "line_items": [
+    {
+      "description": "Nitrile safety gloves",
+      "quantity": "10",
+      "unit_price": "112.89",
+      "amount": "1128.90"
+    },
+    {
+      "description": "Safety helmet ISI marked",
+      "quantity": "50",
+      "unit_price": "232.90",
+      "amount": "11645.00"
+    },
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "12",
+      "unit_price": "1860.54",
+      "amount": "22326.48"
+    }
+  ]
+}

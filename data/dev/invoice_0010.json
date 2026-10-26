@@ -1,0 +1,61 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Fortune Steel Traders",
+  "invoice_number": "INV02395",
+  "invoice_date": "2026-07-13",
+  "due_date": "2026-07-28",
+  "currency": "INR",
+  "subtotal": "48781.20",
+  "tax": "8780.62",
+  "total": "57561.82",
+  "line_items": [
+    {
+      "description": "Packing tape 48mm x 65m",
+      "quantity": "100",
+      "unit_price": "64.04",
+      "amount": "6404.00"
+    },
+    {
+      "description": "Hex bolt M10 x 50 (box of 100)",
+      "quantity": "5",
+      "unit_price": "476.85",
+      "amount": "2384.25"
+    },
+    {
+      "description": "Nitrile safety gloves",
+      "quantity": "100",
+      "unit_price": "104.13",
+      "amount": "10413.00"
+    },
+    {
+      "description": "Courier charges - domestic",
+      "quantity": "6",
+      "unit_price": "423.53",
+      "amount": "2541.18"
+    },
+    {
+      "description": "Copper wire 2.5 sq mm",
+      "quantity": "21",
+      "unit_price": "25.47",
+      "amount": "534.87"
+    },
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "376",
+      "unit_price": "64.96",
+      "amount": "24424.96"
+    },
+    {
+      "description": "Shrink sleeves printing",
+      "quantity": "2",
+      "unit_price": "2.28",
+      "amount": "4.56"
+    },
+    {
+      "description": "Pallet wooden 1200x1000",
+      "quantity": "2",
+      "unit_price": "1037.19",
+      "amount": "2074.38"
+    }
+  ]
+}

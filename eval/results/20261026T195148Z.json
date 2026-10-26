@@ -1,0 +1,384 @@
+{
+  "run_at": "20261026T195148Z",
+  "note": "M5 second eval: prompt v2, typed-value grounding, currency fix, blur threshold 40, Gemini retry",
+  "dataset": "test",
+  "config": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "extract_v2",
+    "confidence_threshold": 0.85,
+    "today": "2026-10-26"
+  },
+  "data": {
+    "files": 25,
+    "seeded_duplicates": 5,
+    "composition": "synthetic only (public-dataset and phone-photo samples not added yet)",
+    "generated_on": "2026-10-26"
+  },
+  "metrics": {
+    "documents": 25,
+    "failed": 0,
+    "field_accuracy_overall": 1.0,
+    "field_accuracy_header": 1.0,
+    "field_accuracy_per_field": {
+      "currency": 1.0,
+      "due_date": 1.0,
+      "invoice_date": 1.0,
+      "invoice_number": 1.0,
+      "line_items.amount": 1.0,
+      "line_items.description": 1.0,
+      "line_items.quantity": 1.0,
+      "line_items.unit_price": 1.0,
+      "subtotal": 1.0,
+      "tax": 1.0,
+      "total": 1.0,
+      "vendor_name": 1.0
+    },
+    "fields_compared": 624,
+    "auto_approval_rate": 0.64,
+    "auto_approved": 16,
+    "wrong_field_rate_in_auto_approved": 0.0,
+    "wrong_fields_in_auto_approved": 0,
+    "auto_approved_with_any_wrong_field": [],
+    "duplicates_caught": "5/5",
+    "duplicates_missed": [],
+    "false_duplicate_flags": [],
+    "review_reason_counts": {
+      "low_confidence": 9,
+      "possible_duplicate": 5,
+      "vendor_known": 4
+    },
+    "avg_processing_seconds": 4.43,
+    "cost_per_invoice_usd": 0.00164,
+    "projected_monthly_cost_usd": 3.28
+  },
+  "threshold_sweep": [
+    {
+      "threshold": 0.6,
+      "auto_approval_rate": 0.64,
+      "wrong_field_rate_in_auto_approved": 0.0,
+      "auto_approved_with_any_wrong_field": 0
+    },
+    {
+      "threshold": 0.65,
+      "auto_approval_rate": 0.64,
+      "wrong_field_rate_in_auto_approved": 0.0,
+      "auto_approved_with_any_wrong_field": 0
+    },
+    {
+      "threshold": 0.7,
+      "auto_approval_rate": 0.64,
+      "wrong_field_rate_in_auto_approved": 0.0,
+      "auto_approved_with_any_wrong_field": 0
+    },
+    {
+      "threshold": 0.75,
+      "auto_approval_rate": 0.64,
+      "wrong_field_rate_in_auto_approved": 0.0,
+      "auto_approved_with_any_wrong_field": 0
+    },
+    {
+      "threshold": 0.8,
+      "auto_approval_rate": 0.64,
+      "wrong_field_rate_in_auto_approved": 0.0,
+      "auto_approved_with_any_wrong_field": 0
+    },
+    {
+      "threshold": 0.85,
+      "auto_approval_rate": 0.64,
+      "wrong_field_rate_in_auto_approved": 0.0,
+      "auto_approved_with_any_wrong_field": 0
+    },
+    {
+      "threshold": 0.9,
+      "auto_approval_rate": 0.6,
+      "wrong_field_rate_in_auto_approved": 0.0,
+      "auto_approved_with_any_wrong_field": 0
+    },
+    {
+      "threshold": 0.95,
+      "auto_approval_rate": 0.56,
+      "wrong_field_rate_in_auto_approved": 0.0,
+      "auto_approved_with_any_wrong_field": 0
+    }
+  ],
+  "documents": [
+    {
+      "file": "test_0001.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 4132,
+      "cost_usd": 0.00128,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0002.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 3675,
+      "cost_usd": 0.00113,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0003.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 4504,
+      "cost_usd": 0.00129,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0004.pdf",
+      "status": "needs_review",
+      "review_reasons": [
+        "vendor_known",
+        "low_confidence"
+      ],
+      "overall_confidence": 0.5,
+      "processing_ms": 3264,
+      "cost_usd": 0.00211,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0005.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 4493,
+      "cost_usd": 0.00222,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0006.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 4462,
+      "cost_usd": 0.00208,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0007.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 4742,
+      "cost_usd": 0.00222,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0008.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 2228,
+      "cost_usd": 0.00134,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0009.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 6658,
+      "cost_usd": 0.00211,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0010.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 2015,
+      "cost_usd": 0.00128,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0011.jpg",
+      "status": "needs_review",
+      "review_reasons": [
+        "vendor_known",
+        "low_confidence"
+      ],
+      "overall_confidence": 0.5,
+      "processing_ms": 4296,
+      "cost_usd": 0.00128,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0012.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 0.875,
+      "processing_ms": 6799,
+      "cost_usd": 0.00175,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0013.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 4757,
+      "cost_usd": 0.00124,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0014.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 4171,
+      "cost_usd": 0.00191,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0015.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 2554,
+      "cost_usd": 0.00201,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0016.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 3502,
+      "cost_usd": 0.0014,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0017.jpg",
+      "status": "needs_review",
+      "review_reasons": [
+        "vendor_known",
+        "low_confidence"
+      ],
+      "overall_confidence": 0.5,
+      "processing_ms": 10942,
+      "cost_usd": 0.00147,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0018.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 0.9,
+      "processing_ms": 7158,
+      "cost_usd": 0.00207,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0019.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 4825,
+      "cost_usd": 0.00146,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0020.jpg",
+      "status": "needs_review",
+      "review_reasons": [
+        "low_confidence"
+      ],
+      "overall_confidence": 0.0,
+      "processing_ms": 3229,
+      "cost_usd": 0.00128,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0021.pdf",
+      "status": "needs_review",
+      "review_reasons": [
+        "possible_duplicate",
+        "low_confidence"
+      ],
+      "overall_confidence": 0.5,
+      "processing_ms": 3112,
+      "cost_usd": 0.00128,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0022.pdf",
+      "status": "needs_review",
+      "review_reasons": [
+        "possible_duplicate",
+        "low_confidence"
+      ],
+      "overall_confidence": 0.5,
+      "processing_ms": 2978,
+      "cost_usd": 0.00117,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0023.pdf",
+      "status": "needs_review",
+      "review_reasons": [
+        "possible_duplicate",
+        "low_confidence"
+      ],
+      "overall_confidence": 0.5,
+      "processing_ms": 2366,
+      "cost_usd": 0.00127,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0024.jpg",
+      "status": "needs_review",
+      "review_reasons": [
+        "vendor_known",
+        "possible_duplicate",
+        "low_confidence"
+      ],
+      "overall_confidence": 0.5,
+      "processing_ms": 7223,
+      "cost_usd": 0.0021,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0025.pdf",
+      "status": "needs_review",
+      "review_reasons": [
+        "possible_duplicate",
+        "low_confidence"
+      ],
+      "overall_confidence": 0.5,
+      "processing_ms": 2720,
+      "cost_usd": 0.00222,
+      "error": null,
+      "wrong_fields": []
+    }
+  ]
+}

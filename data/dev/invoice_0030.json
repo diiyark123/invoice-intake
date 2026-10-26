@@ -1,0 +1,25 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Apex Industrial Supplies Pvt Ltd",
+  "invoice_number": "G-35962",
+  "invoice_date": "2026-07-18",
+  "due_date": "2026-09-16",
+  "currency": "INR",
+  "subtotal": "85064.78",
+  "tax": "4253.24",
+  "total": "89318.02",
+  "line_items": [
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "24",
+      "unit_price": "2912.33",
+      "amount": "69895.92"
+    },
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "194",
+      "unit_price": "78.19",
+      "amount": "15168.86"
+    }
+  ]
+}

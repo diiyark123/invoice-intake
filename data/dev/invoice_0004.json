@@ -1,0 +1,61 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Nova Tools & Hardware",
+  "invoice_number": "MS/26-27/4710",
+  "invoice_date": "2026-05-18",
+  "due_date": "2026-07-02",
+  "currency": "INR",
+  "subtotal": "99292.13",
+  "tax": "17872.58",
+  "total": "117164.71",
+  "line_items": [
+    {
+      "description": "Shrink sleeves printing",
+      "quantity": "1",
+      "unit_price": "2.62",
+      "amount": "2.62"
+    },
+    {
+      "description": "LED tube light 20W",
+      "quantity": "50",
+      "unit_price": "261.45",
+      "amount": "13072.50"
+    },
+    {
+      "description": "Hex bolt M10 x 50 (box of 100)",
+      "quantity": "24",
+      "unit_price": "712.05",
+      "amount": "17089.20"
+    },
+    {
+      "description": "Hydraulic oil 68 grade",
+      "quantity": "15",
+      "unit_price": "203.20",
+      "amount": "3048.00"
+    },
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "24",
+      "unit_price": "2709.65",
+      "amount": "65031.60"
+    },
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "8",
+      "unit_price": "72.55",
+      "amount": "580.40"
+    },
+    {
+      "description": "Packing tape 48mm x 65m",
+      "quantity": "2",
+      "unit_price": "63.02",
+      "amount": "126.04"
+    },
+    {
+      "description": "Safety helmet ISI marked",
+      "quantity": "1",
+      "unit_price": "341.77",
+      "amount": "341.77"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Quartz Lab Instruments",
+  "invoice_number": "INV01385",
+  "invoice_date": "2026-09-13",
+  "due_date": "2026-10-13",
+  "currency": "INR",
+  "subtotal": "13198.88",
+  "tax": "2375.80",
+  "total": "15574.68",
+  "line_items": [
+    {
+      "description": "Canteen meal vouchers",
+      "quantity": "1",
+      "unit_price": "71.78",
+      "amount": "71.78"
+    },
+    {
+      "description": "Corrugated carton box 18x12x10",
+      "quantity": "6",
+      "unit_price": "21.41",
+      "amount": "128.46"
+    },
+    {
+      "description": "Hex bolt M10 x 50 (box of 100)",
+      "quantity": "6",
+      "unit_price": "434.74",
+      "amount": "2608.44"
+    },
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "4",
+      "unit_price": "2597.55",
+      "amount": "10390.20"
+    }
+  ]
+}

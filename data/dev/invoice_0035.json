@@ -1,0 +1,55 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Meghna Food Services",
+  "invoice_number": "0484313",
+  "invoice_date": "2025-12-24",
+  "due_date": "2026-01-23",
+  "currency": "INR",
+  "subtotal": "185057.03",
+  "tax": "33310.26",
+  "total": "218367.29",
+  "line_items": [
+    {
+      "description": "Industrial degreaser 5L",
+      "quantity": "12",
+      "unit_price": "1076.97",
+      "amount": "12923.64"
+    },
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "43.5",
+      "unit_price": "62.30",
+      "amount": "2710.05"
+    },
+    {
+      "description": "Annual maintenance - printers",
+      "quantity": "1",
+      "unit_price": "10055.17",
+      "amount": "10055.17"
+    },
+    {
+      "description": "Hex bolt M10 x 50 (box of 100)",
+      "quantity": "20",
+      "unit_price": "475.10",
+      "amount": "9502.00"
+    },
+    {
+      "description": "Stretch wrap film 500mm",
+      "quantity": "3",
+      "unit_price": "413.19",
+      "amount": "1239.57"
+    },
+    {
+      "description": "Shrink sleeves printing",
+      "quantity": "6",
+      "unit_price": "7.10",
+      "amount": "42.60"
+    },
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "50",
+      "unit_price": "2971.68",
+      "amount": "148584.00"
+    }
+  ]
+}

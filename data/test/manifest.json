@@ -1,0 +1,196 @@
+{
+  "generated_on": "2026-10-26",
+  "seed": 2026,
+  "files": [
+    {
+      "file": "test_0001.pdf",
+      "label": "test_0001.json",
+      "source": "synthetic",
+      "layout": "classic",
+      "scanned": false,
+      "vendor_seeded": true
+    },
+    {
+      "file": "test_0002.pdf",
+      "label": "test_0002.json",
+      "source": "synthetic",
+      "layout": "modern",
+      "scanned": false,
+      "vendor_seeded": true
+    },
+    {
+      "file": "test_0003.pdf",
+      "label": "test_0003.json",
+      "source": "synthetic",
+      "layout": "two_column",
+      "scanned": false,
+      "vendor_seeded": true
+    },
+    {
+      "file": "test_0004.pdf",
+      "label": "test_0004.json",
+      "source": "synthetic",
+      "layout": "gst_heavy",
+      "scanned": false,
+      "vendor_seeded": false
+    },
+    {
+      "file": "test_0005.pdf",
+      "label": "test_0005.json",
+      "source": "synthetic",
+      "layout": "thermal",
+      "scanned": false,
+      "vendor_seeded": true
+    },
+    {
+      "file": "test_0006.pdf",
+      "label": "test_0006.json",
+      "source": "synthetic",
+      "layout": "classic",
+      "scanned": false,
+      "vendor_seeded": true
+    },
+    {
+      "file": "test_0007.pdf",
+      "label": "test_0007.json",
+      "source": "synthetic",
+      "layout": "modern",
+      "scanned": false,
+      "vendor_seeded": true
+    },
+    {
+      "file": "test_0008.pdf",
+      "label": "test_0008.json",
+      "source": "synthetic",
+      "layout": "two_column",
+      "scanned": false,
+      "vendor_seeded": true
+    },
+    {
+      "file": "test_0009.jpg",
+      "label": "test_0009.json",
+      "source": "synthetic",
+      "layout": "gst_heavy",
+      "scanned": true,
+      "vendor_seeded": true
+    },
+    {
+      "file": "test_0010.pdf",
+      "label": "test_0010.json",
+      "source": "synthetic",
+      "layout": "thermal",
+      "scanned": false,
+      "vendor_seeded": true
+    },
+    {
+      "file": "test_0011.jpg",
+      "label": "test_0011.json",
+      "source": "synthetic",
+      "layout": "classic",
+      "scanned": true,
+      "vendor_seeded": false
+    },
+    {
+      "file": "test_0012.jpg",
+      "label": "test_0012.json",
+      "source": "synthetic",
+      "layout": "modern",
+      "scanned": true,
+      "vendor_seeded": true
+    },
+    {
+      "file": "test_0013.jpg",
+      "label": "test_0013.json",
+      "source": "synthetic",
+      "layout": "two_column",
+      "scanned": true,
+      "vendor_seeded": true
+    },
+    {
+      "file": "test_0014.pdf",
+      "label": "test_0014.json",
+      "source": "synthetic",
+      "layout": "gst_heavy",
+      "scanned": false,
+      "vendor_seeded": true
+    },
+    {
+      "file": "test_0015.pdf",
+      "label": "test_0015.json",
+      "source": "synthetic",
+      "layout": "thermal",
+      "scanned": false,
+      "vendor_seeded": true
+    },
+    {
+      "file": "test_0016.pdf",
+      "label": "test_0016.json",
+      "source": "synthetic",
+      "layout": "classic",
+      "scanned": false,
+      "vendor_seeded": true
+    },
+    {
+      "file": "test_0017.jpg",
+      "label": "test_0017.json",
+      "source": "synthetic",
+      "layout": "modern",
+      "scanned": true,
+      "vendor_seeded": false
+    },
+    {
+      "file": "test_0018.jpg",
+      "label": "test_0018.json",
+      "source": "synthetic",
+      "layout": "two_column",
+      "scanned": true,
+      "vendor_seeded": true
+    },
+    {
+      "file": "test_0019.jpg",
+      "label": "test_0019.json",
+      "source": "synthetic",
+      "layout": "gst_heavy",
+      "scanned": true,
+      "vendor_seeded": true
+    },
+    {
+      "file": "test_0020.jpg",
+      "label": "test_0020.json",
+      "source": "synthetic",
+      "layout": "thermal",
+      "scanned": true,
+      "vendor_seeded": true
+    },
+    {
+      "file": "test_0021.pdf",
+      "label": "test_0021.json",
+      "source": "synthetic",
+      "duplicate_kind": "exact_copy"
+    },
+    {
+      "file": "test_0022.pdf",
+      "label": "test_0022.json",
+      "source": "synthetic",
+      "duplicate_kind": "same_number_different_file"
+    },
+    {
+      "file": "test_0023.pdf",
+      "label": "test_0023.json",
+      "source": "synthetic",
+      "duplicate_kind": "number_variant"
+    },
+    {
+      "file": "test_0024.jpg",
+      "label": "test_0024.json",
+      "source": "synthetic",
+      "duplicate_kind": "rescanned_copy"
+    },
+    {
+      "file": "test_0025.pdf",
+      "label": "test_0025.json",
+      "source": "synthetic",
+      "duplicate_kind": "date_shift_2_days"
+    }
+  ]
+}

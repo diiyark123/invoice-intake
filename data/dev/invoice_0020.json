@@ -1,0 +1,61 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Orbit Courier Services Pvt Ltd",
+  "invoice_number": "INV07396",
+  "invoice_date": "2025-12-24",
+  "due_date": "2026-02-07",
+  "currency": "INR",
+  "subtotal": "975038.72",
+  "tax": "48751.94",
+  "total": "1023790.66",
+  "line_items": [
+    {
+      "description": "A4 copier paper 75 GSM",
+      "quantity": "12",
+      "unit_price": "262.82",
+      "amount": "3153.84"
+    },
+    {
+      "description": "Floor cleaning liquid 1L",
+      "quantity": "12",
+      "unit_price": "172.63",
+      "amount": "2071.56"
+    },
+    {
+      "description": "Fire extinguisher refill 4kg",
+      "quantity": "20",
+      "unit_price": "560.53",
+      "amount": "11210.60"
+    },
+    {
+      "description": "Stretch wrap film 500mm",
+      "quantity": "24",
+      "unit_price": "732.77",
+      "amount": "17586.48"
+    },
+    {
+      "description": "Annual maintenance - printers",
+      "quantity": "100",
+      "unit_price": "9322.20",
+      "amount": "932220.00"
+    },
+    {
+      "description": "Packing tape 48mm x 65m",
+      "quantity": "1",
+      "unit_price": "39.27",
+      "amount": "39.27"
+    },
+    {
+      "description": "LED tube light 20W",
+      "quantity": "1",
+      "unit_price": "203.61",
+      "amount": "203.61"
+    },
+    {
+      "description": "Courier charges - domestic",
+      "quantity": "24",
+      "unit_price": "356.39",
+      "amount": "8553.36"
+    }
+  ]
+}

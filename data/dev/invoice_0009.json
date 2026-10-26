@@ -1,0 +1,19 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Deccan Office Solutions",
+  "invoice_number": "INV03173",
+  "invoice_date": "2026-07-15",
+  "due_date": "2026-08-29",
+  "currency": "INR",
+  "subtotal": "4088.00",
+  "tax": "490.56",
+  "total": "4578.56",
+  "line_items": [
+    {
+      "description": "Corrugated carton box 18x12x10",
+      "quantity": "100",
+      "unit_price": "40.88",
+      "amount": "4088.00"
+    }
+  ]
+}

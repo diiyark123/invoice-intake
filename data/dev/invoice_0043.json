@@ -1,0 +1,49 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Evergreen Chemicals Ltd",
+  "invoice_number": "INV-2025-5986",
+  "invoice_date": "2025-12-31",
+  "due_date": "2026-03-01",
+  "currency": "INR",
+  "subtotal": "19139.20",
+  "tax": "2296.70",
+  "total": "21435.90",
+  "line_items": [
+    {
+      "description": "LED tube light 20W",
+      "quantity": "20",
+      "unit_price": "320.39",
+      "amount": "6407.80"
+    },
+    {
+      "description": "Canteen meal vouchers",
+      "quantity": "10",
+      "unit_price": "79.27",
+      "amount": "792.70"
+    },
+    {
+      "description": "Fire extinguisher refill 4kg",
+      "quantity": "10",
+      "unit_price": "850.34",
+      "amount": "8503.40"
+    },
+    {
+      "description": "Industrial degreaser 5L",
+      "quantity": "2",
+      "unit_price": "1270.25",
+      "amount": "2540.50"
+    },
+    {
+      "description": "Corrugated carton box 18x12x10",
+      "quantity": "6",
+      "unit_price": "26.77",
+      "amount": "160.62"
+    },
+    {
+      "description": "Pallet wooden 1200x1000",
+      "quantity": "1",
+      "unit_price": "734.18",
+      "amount": "734.18"
+    }
+  ]
+}

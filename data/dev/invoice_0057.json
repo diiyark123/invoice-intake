@@ -1,0 +1,61 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Fortune Steel Traders",
+  "invoice_number": "INV09878",
+  "invoice_date": "2026-01-01",
+  "due_date": "2026-01-31",
+  "currency": "INR",
+  "subtotal": "100493.18",
+  "tax": "12059.18",
+  "total": "112552.36",
+  "line_items": [
+    {
+      "description": "Hydraulic oil 68 grade",
+      "quantity": "301",
+      "unit_price": "160.65",
+      "amount": "48355.65"
+    },
+    {
+      "description": "Safety helmet ISI marked",
+      "quantity": "5",
+      "unit_price": "331.39",
+      "amount": "1656.95"
+    },
+    {
+      "description": "Industrial degreaser 5L",
+      "quantity": "24",
+      "unit_price": "961.87",
+      "amount": "23084.88"
+    },
+    {
+      "description": "LED tube light 20W",
+      "quantity": "12",
+      "unit_price": "222.77",
+      "amount": "2673.24"
+    },
+    {
+      "description": "Canteen meal vouchers",
+      "quantity": "4",
+      "unit_price": "84.69",
+      "amount": "338.76"
+    },
+    {
+      "description": "Packing tape 48mm x 65m",
+      "quantity": "100",
+      "unit_price": "66.80",
+      "amount": "6680.00"
+    },
+    {
+      "description": "Courier charges - domestic",
+      "quantity": "20",
+      "unit_price": "221.31",
+      "amount": "4426.20"
+    },
+    {
+      "description": "A4 copier paper 75 GSM",
+      "quantity": "50",
+      "unit_price": "265.55",
+      "amount": "13277.50"
+    }
+  ]
+}

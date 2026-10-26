@@ -1,0 +1,37 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Kaveri Cleaning Supplies",
+  "invoice_number": "0712269",
+  "invoice_date": "2026-10-22",
+  "due_date": "2026-12-06",
+  "currency": "INR",
+  "subtotal": "15600.43",
+  "tax": "1872.06",
+  "total": "17472.49",
+  "line_items": [
+    {
+      "description": "Stretch wrap film 500mm",
+      "quantity": "1",
+      "unit_price": "483.67",
+      "amount": "483.67"
+    },
+    {
+      "description": "Packing tape 48mm x 65m",
+      "quantity": "4",
+      "unit_price": "39.56",
+      "amount": "158.24"
+    },
+    {
+      "description": "Safety helmet ISI marked",
+      "quantity": "20",
+      "unit_price": "419.93",
+      "amount": "8398.60"
+    },
+    {
+      "description": "A4 copier paper 75 GSM",
+      "quantity": "24",
+      "unit_price": "273.33",
+      "amount": "6559.92"
+    }
+  ]
+}

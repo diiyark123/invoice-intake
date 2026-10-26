@@ -1,0 +1,25 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Indus Fasteners Inc",
+  "invoice_number": "61",
+  "invoice_date": "2025-12-03",
+  "due_date": "2026-01-17",
+  "currency": "INR",
+  "subtotal": "18407.22",
+  "tax": "920.36",
+  "total": "19327.58",
+  "line_items": [
+    {
+      "description": "Hydraulic oil 68 grade",
+      "quantity": "77",
+      "unit_price": "214.94",
+      "amount": "16550.38"
+    },
+    {
+      "description": "Fire extinguisher refill 4kg",
+      "quantity": "2",
+      "unit_price": "928.42",
+      "amount": "1856.84"
+    }
+  ]
+}

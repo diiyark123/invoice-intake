@@ -1,0 +1,43 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Indus Fasteners Inc",
+  "invoice_number": "0264878",
+  "invoice_date": "2025-11-19",
+  "due_date": "2026-01-03",
+  "currency": "INR",
+  "subtotal": "136041.76",
+  "tax": "6802.08",
+  "total": "142843.84",
+  "line_items": [
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "50",
+      "unit_price": "2482.45",
+      "amount": "124122.50"
+    },
+    {
+      "description": "Shrink sleeves printing",
+      "quantity": "3",
+      "unit_price": "6.49",
+      "amount": "19.47"
+    },
+    {
+      "description": "Fire extinguisher refill 4kg",
+      "quantity": "3",
+      "unit_price": "671.72",
+      "amount": "2015.16"
+    },
+    {
+      "description": "Packing tape 48mm x 65m",
+      "quantity": "3",
+      "unit_price": "47.64",
+      "amount": "142.92"
+    },
+    {
+      "description": "Hydraulic oil 68 grade",
+      "quantity": "41.5",
+      "unit_price": "234.74",
+      "amount": "9741.71"
+    }
+  ]
+}

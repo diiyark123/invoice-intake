@@ -1,0 +1,25 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Meghna Food Services",
+  "invoice_number": "H-37305",
+  "invoice_date": "2026-08-02",
+  "due_date": "2026-09-01",
+  "currency": "INR",
+  "subtotal": "50519.92",
+  "tax": "9093.58",
+  "total": "59613.50",
+  "line_items": [
+    {
+      "description": "Packing tape 48mm x 65m",
+      "quantity": "2",
+      "unit_price": "51.26",
+      "amount": "102.52"
+    },
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "20",
+      "unit_price": "2520.87",
+      "amount": "50417.40"
+    }
+  ]
+}

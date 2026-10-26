@@ -1,0 +1,25 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Jupiter Safety Equipment",
+  "invoice_number": "INV-2026-2085",
+  "invoice_date": "2026-04-24",
+  "due_date": "2026-05-24",
+  "currency": "INR",
+  "subtotal": "29763.98",
+  "tax": "3571.68",
+  "total": "33335.66",
+  "line_items": [
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "6",
+      "unit_price": "2847.93",
+      "amount": "17087.58"
+    },
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "167.5",
+      "unit_price": "75.68",
+      "amount": "12676.40"
+    }
+  ]
+}

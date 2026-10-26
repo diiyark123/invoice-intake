@@ -1,0 +1,25 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Apex Industrial Supplies Pvt Ltd",
+  "invoice_number": "MS/25-26/1796",
+  "invoice_date": "2025-12-04",
+  "due_date": "2026-01-18",
+  "currency": "INR",
+  "subtotal": "11781.68",
+  "tax": "589.08",
+  "total": "12370.76",
+  "line_items": [
+    {
+      "description": "Stretch wrap film 500mm",
+      "quantity": "6",
+      "unit_price": "777.78",
+      "amount": "4666.68"
+    },
+    {
+      "description": "Canteen meal vouchers",
+      "quantity": "100",
+      "unit_price": "71.15",
+      "amount": "7115.00"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Horizon IT Services",
+  "invoice_number": "MS/25-26/1153",
+  "invoice_date": "2025-11-11",
+  "due_date": "2026-01-10",
+  "currency": "INR",
+  "subtotal": "76872.09",
+  "tax": "13836.98",
+  "total": "90709.07",
+  "line_items": [
+    {
+      "description": "Courier charges - domestic",
+      "quantity": "1",
+      "unit_price": "256.81",
+      "amount": "256.81"
+    },
+    {
+      "description": "Fire extinguisher refill 4kg",
+      "quantity": "10",
+      "unit_price": "656.36",
+      "amount": "6563.60"
+    },
+    {
+      "description": "Nitrile safety gloves",
+      "quantity": "1",
+      "unit_price": "72.85",
+      "amount": "72.85"
+    },
+    {
+      "description": "Pallet wooden 1200x1000",
+      "quantity": "20",
+      "unit_price": "684.45",
+      "amount": "13689.00"
+    },
+    {
+      "description": "Shrink sleeves printing",
+      "quantity": "1",
+      "unit_price": "2.00",
+      "amount": "2.00"
+    },
+    {
+      "description": "Corrugated carton box 18x12x10",
+      "quantity": "20",
+      "unit_price": "30.39",
+      "amount": "607.80"
+    },
+    {
+      "description": "Hydraulic oil 68 grade",
+      "quantity": "279",
+      "unit_price": "199.57",
+      "amount": "55680.03"
+    }
+  ]
+}

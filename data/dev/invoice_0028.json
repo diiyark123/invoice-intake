@@ -1,0 +1,55 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Horizon IT Services",
+  "invoice_number": "C-92113",
+  "invoice_date": "2025-12-29",
+  "due_date": "2026-01-13",
+  "currency": "INR",
+  "subtotal": "69694.51",
+  "tax": "8363.34",
+  "total": "78057.85",
+  "line_items": [
+    {
+      "description": "Canteen meal vouchers",
+      "quantity": "2",
+      "unit_price": "102.79",
+      "amount": "205.58"
+    },
+    {
+      "description": "LED tube light 20W",
+      "quantity": "24",
+      "unit_price": "195.68",
+      "amount": "4696.32"
+    },
+    {
+      "description": "Shrink sleeves printing",
+      "quantity": "50",
+      "unit_price": "8.62",
+      "amount": "431.00"
+    },
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "198",
+      "unit_price": "61.48",
+      "amount": "12173.04"
+    },
+    {
+      "description": "Nitrile safety gloves",
+      "quantity": "12",
+      "unit_price": "108.64",
+      "amount": "1303.68"
+    },
+    {
+      "description": "Pallet wooden 1200x1000",
+      "quantity": "1",
+      "unit_price": "650.89",
+      "amount": "650.89"
+    },
+    {
+      "description": "Hex bolt M10 x 50 (box of 100)",
+      "quantity": "100",
+      "unit_price": "502.34",
+      "amount": "50234.00"
+    }
+  ]
+}

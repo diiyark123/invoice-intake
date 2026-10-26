@@ -1,0 +1,25 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Apex Industrial Supplies Pvt Ltd",
+  "invoice_number": "MS/25-26/1755",
+  "invoice_date": "2025-11-03",
+  "due_date": "2025-11-18",
+  "currency": "INR",
+  "subtotal": "999.18",
+  "tax": "49.96",
+  "total": "1049.14",
+  "line_items": [
+    {
+      "description": "Shrink sleeves printing",
+      "quantity": "3",
+      "unit_price": "7.46",
+      "amount": "22.38"
+    },
+    {
+      "description": "Packing tape 48mm x 65m",
+      "quantity": "24",
+      "unit_price": "40.70",
+      "amount": "976.80"
+    }
+  ]
+}

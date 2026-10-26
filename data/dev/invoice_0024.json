@@ -1,0 +1,55 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Evergreen Chemicals Ltd",
+  "invoice_number": "0958794",
+  "invoice_date": "2026-06-18",
+  "due_date": "2026-08-17",
+  "currency": "INR",
+  "subtotal": "55968.11",
+  "tax": "10074.26",
+  "total": "66042.37",
+  "line_items": [
+    {
+      "description": "Shrink sleeves printing",
+      "quantity": "4",
+      "unit_price": "3.04",
+      "amount": "12.16"
+    },
+    {
+      "description": "Hex bolt M10 x 50 (box of 100)",
+      "quantity": "1",
+      "unit_price": "607.18",
+      "amount": "607.18"
+    },
+    {
+      "description": "Packing tape 48mm x 65m",
+      "quantity": "24",
+      "unit_price": "44.09",
+      "amount": "1058.16"
+    },
+    {
+      "description": "Annual maintenance - printers",
+      "quantity": "3",
+      "unit_price": "10072.72",
+      "amount": "30218.16"
+    },
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "6",
+      "unit_price": "3139.45",
+      "amount": "18836.70"
+    },
+    {
+      "description": "Canteen meal vouchers",
+      "quantity": "5",
+      "unit_price": "75.55",
+      "amount": "377.75"
+    },
+    {
+      "description": "Corrugated carton box 18x12x10",
+      "quantity": "100",
+      "unit_price": "48.58",
+      "amount": "4858.00"
+    }
+  ]
+}

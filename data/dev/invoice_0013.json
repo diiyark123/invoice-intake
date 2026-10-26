@@ -1,0 +1,37 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Deccan Office Solutions",
+  "invoice_number": "B-30243",
+  "invoice_date": "2025-11-05",
+  "due_date": "2026-01-04",
+  "currency": "INR",
+  "subtotal": "33215.42",
+  "tax": "5978.78",
+  "total": "39194.20",
+  "line_items": [
+    {
+      "description": "Canteen meal vouchers",
+      "quantity": "10",
+      "unit_price": "71.23",
+      "amount": "712.30"
+    },
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "6",
+      "unit_price": "2118.82",
+      "amount": "12712.92"
+    },
+    {
+      "description": "Hydraulic oil 68 grade",
+      "quantity": "102.5",
+      "unit_price": "191.77",
+      "amount": "19656.43"
+    },
+    {
+      "description": "Copper wire 2.5 sq mm",
+      "quantity": "4.2",
+      "unit_price": "31.85",
+      "amount": "133.77"
+    }
+  ]
+}

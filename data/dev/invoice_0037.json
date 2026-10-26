@@ -1,0 +1,25 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Meghna Food Services",
+  "invoice_number": "INV-2026-3816",
+  "invoice_date": "2026-09-04",
+  "due_date": "2026-09-19",
+  "currency": "INR",
+  "subtotal": "3546.41",
+  "tax": "177.32",
+  "total": "3723.73",
+  "line_items": [
+    {
+      "description": "Corrugated carton box 18x12x10",
+      "quantity": "3",
+      "unit_price": "54.72",
+      "amount": "164.16"
+    },
+    {
+      "description": "Pallet wooden 1200x1000",
+      "quantity": "5",
+      "unit_price": "676.45",
+      "amount": "3382.25"
+    }
+  ]
+}

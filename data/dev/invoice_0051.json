@@ -1,0 +1,19 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Kaveri Cleaning Supplies",
+  "invoice_number": "E-94148",
+  "invoice_date": "2026-10-06",
+  "due_date": "2026-11-20",
+  "currency": "INR",
+  "subtotal": "78041.28",
+  "tax": "3902.06",
+  "total": "81943.34",
+  "line_items": [
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "24",
+      "unit_price": "3251.72",
+      "amount": "78041.28"
+    }
+  ]
+}

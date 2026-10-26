@@ -1,0 +1,49 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Fortune Steel Traders",
+  "invoice_number": "0251930",
+  "invoice_date": "2025-12-30",
+  "due_date": null,
+  "currency": "INR",
+  "subtotal": "23528.59",
+  "tax": "2823.44",
+  "total": "26352.03",
+  "line_items": [
+    {
+      "description": "Copper wire 2.5 sq mm",
+      "quantity": "67",
+      "unit_price": "23.52",
+      "amount": "1575.84"
+    },
+    {
+      "description": "Hydraulic oil 68 grade",
+      "quantity": "6.9",
+      "unit_price": "198.00",
+      "amount": "1366.20"
+    },
+    {
+      "description": "Stretch wrap film 500mm",
+      "quantity": "20",
+      "unit_price": "774.60",
+      "amount": "15492.00"
+    },
+    {
+      "description": "Nitrile safety gloves",
+      "quantity": "24",
+      "unit_price": "69.75",
+      "amount": "1674.00"
+    },
+    {
+      "description": "Industrial degreaser 5L",
+      "quantity": "1",
+      "unit_price": "1206.75",
+      "amount": "1206.75"
+    },
+    {
+      "description": "Floor cleaning liquid 1L",
+      "quantity": "20",
+      "unit_price": "110.69",
+      "amount": "2213.80"
+    }
+  ]
+}

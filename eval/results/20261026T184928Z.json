@@ -1,0 +1,321 @@
+{
+  "run_at": "20261026T184928Z",
+  "note": "M3 baseline (synthetic-only test set, prompt extract_v1)",
+  "config": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "extract_v1",
+    "confidence_threshold": 0.85,
+    "today": "2026-10-26"
+  },
+  "test_set": {
+    "files": 25,
+    "seeded_duplicates": 5,
+    "composition": "synthetic only (public-dataset and phone-photo samples not added yet)",
+    "generated_on": "2026-10-26"
+  },
+  "metrics": {
+    "documents": 25,
+    "failed": 0,
+    "field_accuracy_overall": 0.9984,
+    "field_accuracy_header": 1.0,
+    "field_accuracy_per_field": {
+      "currency": 1.0,
+      "due_date": 1.0,
+      "invoice_date": 1.0,
+      "invoice_number": 1.0,
+      "line_items.amount": 1.0,
+      "line_items.description": 0.9906,
+      "line_items.quantity": 1.0,
+      "line_items.unit_price": 1.0,
+      "subtotal": 1.0,
+      "tax": 1.0,
+      "total": 1.0,
+      "vendor_name": 1.0
+    },
+    "fields_compared": 624,
+    "auto_approval_rate": 0.6,
+    "auto_approved": 15,
+    "wrong_field_rate_in_auto_approved": 0.0026,
+    "wrong_fields_in_auto_approved": 1,
+    "auto_approved_with_any_wrong_field": [
+      "test_0019.jpg"
+    ],
+    "duplicates_caught": "5/5",
+    "duplicates_missed": [],
+    "false_duplicate_flags": [],
+    "review_reason_counts": {
+      "low_confidence": 9,
+      "low_image_quality": 2,
+      "possible_duplicate": 5,
+      "vendor_known": 4
+    },
+    "avg_processing_seconds": 8.0,
+    "cost_per_invoice_usd": 0.0016,
+    "projected_monthly_cost_usd": 3.2
+  },
+  "documents": [
+    {
+      "file": "test_0001.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "processing_ms": 6234,
+      "cost_usd": 0.00124,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0002.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "processing_ms": 8782,
+      "cost_usd": 0.00109,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0003.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "processing_ms": 10064,
+      "cost_usd": 0.00125,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0004.pdf",
+      "status": "needs_review",
+      "review_reasons": [
+        "vendor_known",
+        "low_confidence"
+      ],
+      "processing_ms": 7251,
+      "cost_usd": 0.00207,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0005.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "processing_ms": 5200,
+      "cost_usd": 0.00218,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0006.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "processing_ms": 9023,
+      "cost_usd": 0.00204,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0007.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "processing_ms": 6049,
+      "cost_usd": 0.00218,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0008.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "processing_ms": 7172,
+      "cost_usd": 0.0013,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0009.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "processing_ms": 10815,
+      "cost_usd": 0.00207,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0010.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "processing_ms": 7357,
+      "cost_usd": 0.00124,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0011.jpg",
+      "status": "needs_review",
+      "review_reasons": [
+        "vendor_known",
+        "low_confidence"
+      ],
+      "processing_ms": 8340,
+      "cost_usd": 0.00124,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0012.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "processing_ms": 10159,
+      "cost_usd": 0.00171,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0013.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "processing_ms": 10899,
+      "cost_usd": 0.0012,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0014.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "processing_ms": 3833,
+      "cost_usd": 0.00187,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0015.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "processing_ms": 8876,
+      "cost_usd": 0.00197,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0016.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "processing_ms": 2749,
+      "cost_usd": 0.00136,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0017.jpg",
+      "status": "needs_review",
+      "review_reasons": [
+        "vendor_known",
+        "low_confidence"
+      ],
+      "processing_ms": 9928,
+      "cost_usd": 0.00143,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0018.jpg",
+      "status": "needs_review",
+      "review_reasons": [
+        "low_image_quality"
+      ],
+      "processing_ms": 10949,
+      "cost_usd": 0.00203,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0019.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "processing_ms": 6983,
+      "cost_usd": 0.00143,
+      "error": null,
+      "wrong_fields": [
+        {
+          "field": "line_items.description",
+          "line": 0,
+          "expected": "Safety helmet ISI marked",
+          "got": "Safety heimet IS! marked"
+        }
+      ]
+    },
+    {
+      "file": "test_0020.jpg",
+      "status": "needs_review",
+      "review_reasons": [
+        "low_confidence"
+      ],
+      "processing_ms": 8805,
+      "cost_usd": 0.00124,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0021.pdf",
+      "status": "needs_review",
+      "review_reasons": [
+        "possible_duplicate",
+        "low_confidence"
+      ],
+      "processing_ms": 4725,
+      "cost_usd": 0.00124,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0022.pdf",
+      "status": "needs_review",
+      "review_reasons": [
+        "possible_duplicate",
+        "low_confidence"
+      ],
+      "processing_ms": 7763,
+      "cost_usd": 0.00113,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0023.pdf",
+      "status": "needs_review",
+      "review_reasons": [
+        "possible_duplicate",
+        "low_confidence"
+      ],
+      "processing_ms": 7871,
+      "cost_usd": 0.00123,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0024.jpg",
+      "status": "needs_review",
+      "review_reasons": [
+        "low_image_quality",
+        "vendor_known",
+        "possible_duplicate",
+        "low_confidence"
+      ],
+      "processing_ms": 10724,
+      "cost_usd": 0.00206,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "test_0025.pdf",
+      "status": "needs_review",
+      "review_reasons": [
+        "possible_duplicate",
+        "low_confidence"
+      ],
+      "processing_ms": 9474,
+      "cost_usd": 0.00218,
+      "error": null,
+      "wrong_fields": []
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Horizon IT Services",
+  "invoice_number": "INV07497",
+  "invoice_date": "2026-09-26",
+  "due_date": null,
+  "currency": "INR",
+  "subtotal": "7864.44",
+  "tax": "943.74",
+  "total": "8808.18",
+  "line_items": [
+    {
+      "description": "Courier charges - domestic",
+      "quantity": "12",
+      "unit_price": "300.72",
+      "amount": "3608.64"
+    },
+    {
+      "description": "Packing tape 48mm x 65m",
+      "quantity": "5",
+      "unit_price": "73.27",
+      "amount": "366.35"
+    },
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "53.5",
+      "unit_price": "72.70",
+      "amount": "3889.45"
+    }
+  ]
+}

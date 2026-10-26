@@ -1,0 +1,55 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Riverstone Furniture Co",
+  "invoice_number": "INV08813",
+  "invoice_date": "2026-07-13",
+  "due_date": "2026-08-27",
+  "currency": "INR",
+  "subtotal": "348691.36",
+  "tax": "17434.56",
+  "total": "366125.92",
+  "line_items": [
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "100",
+      "unit_price": "2764.75",
+      "amount": "276475.00"
+    },
+    {
+      "description": "Corrugated carton box 18x12x10",
+      "quantity": "5",
+      "unit_price": "59.26",
+      "amount": "296.30"
+    },
+    {
+      "description": "Packing tape 48mm x 65m",
+      "quantity": "10",
+      "unit_price": "72.87",
+      "amount": "728.70"
+    },
+    {
+      "description": "Fire extinguisher refill 4kg",
+      "quantity": "4",
+      "unit_price": "570.30",
+      "amount": "2281.20"
+    },
+    {
+      "description": "Floor cleaning liquid 1L",
+      "quantity": "100",
+      "unit_price": "157.65",
+      "amount": "15765.00"
+    },
+    {
+      "description": "Shrink sleeves printing",
+      "quantity": "1",
+      "unit_price": "6.46",
+      "amount": "6.46"
+    },
+    {
+      "description": "Hydraulic oil 68 grade",
+      "quantity": "270",
+      "unit_price": "196.81",
+      "amount": "53138.70"
+    }
+  ]
+}

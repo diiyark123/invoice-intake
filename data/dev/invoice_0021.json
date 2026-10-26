@@ -1,0 +1,61 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Kaveri Cleaning Supplies",
+  "invoice_number": "E-95397",
+  "invoice_date": "2026-06-22",
+  "due_date": "2026-07-07",
+  "currency": "INR",
+  "subtotal": "144450.20",
+  "tax": "26001.04",
+  "total": "170451.24",
+  "line_items": [
+    {
+      "description": "Hex bolt M10 x 50 (box of 100)",
+      "quantity": "4",
+      "unit_price": "468.79",
+      "amount": "1875.16"
+    },
+    {
+      "description": "Canteen meal vouchers",
+      "quantity": "4",
+      "unit_price": "79.23",
+      "amount": "316.92"
+    },
+    {
+      "description": "Hydraulic oil 68 grade",
+      "quantity": "378",
+      "unit_price": "177.80",
+      "amount": "67208.40"
+    },
+    {
+      "description": "Fire extinguisher refill 4kg",
+      "quantity": "50",
+      "unit_price": "851.68",
+      "amount": "42584.00"
+    },
+    {
+      "description": "Shrink sleeves printing",
+      "quantity": "10",
+      "unit_price": "5.91",
+      "amount": "59.10"
+    },
+    {
+      "description": "Packing tape 48mm x 65m",
+      "quantity": "1",
+      "unit_price": "57.62",
+      "amount": "57.62"
+    },
+    {
+      "description": "LED tube light 20W",
+      "quantity": "24",
+      "unit_price": "254.14",
+      "amount": "6099.36"
+    },
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "397",
+      "unit_price": "66.12",
+      "amount": "26249.64"
+    }
+  ]
+}

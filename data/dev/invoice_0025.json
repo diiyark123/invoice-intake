@@ -1,0 +1,43 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Apex Industrial Supplies Pvt Ltd",
+  "invoice_number": "0126559",
+  "invoice_date": "2026-03-29",
+  "due_date": "2026-04-28",
+  "currency": "INR",
+  "subtotal": "55611.46",
+  "tax": "2780.58",
+  "total": "58392.04",
+  "line_items": [
+    {
+      "description": "Pallet wooden 1200x1000",
+      "quantity": "10",
+      "unit_price": "921.88",
+      "amount": "9218.80"
+    },
+    {
+      "description": "Stretch wrap film 500mm",
+      "quantity": "5",
+      "unit_price": "534.64",
+      "amount": "2673.20"
+    },
+    {
+      "description": "Hydraulic oil 68 grade",
+      "quantity": "78.5",
+      "unit_price": "246.95",
+      "amount": "19385.58"
+    },
+    {
+      "description": "A4 copier paper 75 GSM",
+      "quantity": "4",
+      "unit_price": "306.55",
+      "amount": "1226.20"
+    },
+    {
+      "description": "Industrial degreaser 5L",
+      "quantity": "24",
+      "unit_price": "962.82",
+      "amount": "23107.68"
+    }
+  ]
+}

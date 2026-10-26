@@ -1,0 +1,25 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Indus Fasteners Inc",
+  "invoice_number": "INV-2026-2990",
+  "invoice_date": "2026-02-21",
+  "due_date": "2026-04-07",
+  "currency": "INR",
+  "subtotal": "12798.13",
+  "tax": "1535.78",
+  "total": "14333.91",
+  "line_items": [
+    {
+      "description": "Copper wire 2.5 sq mm",
+      "quantity": "7",
+      "unit_price": "40.60",
+      "amount": "284.20"
+    },
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "167.5",
+      "unit_price": "74.71",
+      "amount": "12513.93"
+    }
+  ]
+}

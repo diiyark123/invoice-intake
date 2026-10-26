@@ -1,0 +1,25 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Orbit Courier Services Pvt Ltd",
+  "invoice_number": "0140153",
+  "invoice_date": "2025-12-05",
+  "due_date": null,
+  "currency": "INR",
+  "subtotal": "13752.39",
+  "tax": "1650.28",
+  "total": "15402.67",
+  "line_items": [
+    {
+      "description": "Corrugated carton box 18x12x10",
+      "quantity": "1",
+      "unit_price": "56.92",
+      "amount": "56.92"
+    },
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "185.5",
+      "unit_price": "73.83",
+      "amount": "13695.47"
+    }
+  ]
+}

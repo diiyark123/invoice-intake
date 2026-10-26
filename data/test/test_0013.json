@@ -1,0 +1,25 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Horizon IT Services",
+  "invoice_number": "0922087",
+  "invoice_date": "2026-03-21",
+  "due_date": null,
+  "currency": "INR",
+  "subtotal": "1662.66",
+  "tax": "83.14",
+  "total": "1745.80",
+  "line_items": [
+    {
+      "description": "Packing tape 48mm x 65m",
+      "quantity": "24",
+      "unit_price": "48.30",
+      "amount": "1159.20"
+    },
+    {
+      "description": "Canteen meal vouchers",
+      "quantity": "6",
+      "unit_price": "83.91",
+      "amount": "503.46"
+    }
+  ]
+}

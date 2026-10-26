@@ -1,0 +1,31 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Fortune Steel Traders",
+  "invoice_number": "INV-2025-0189",
+  "invoice_date": "2025-12-10",
+  "due_date": "2026-01-09",
+  "currency": "INR",
+  "subtotal": "7315.46",
+  "tax": "1316.78",
+  "total": "8632.24",
+  "line_items": [
+    {
+      "description": "Corrugated carton box 18x12x10",
+      "quantity": "10",
+      "unit_price": "25.84",
+      "amount": "258.40"
+    },
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "3.7",
+      "unit_price": "63.92",
+      "amount": "236.50"
+    },
+    {
+      "description": "A4 copier paper 75 GSM",
+      "quantity": "24",
+      "unit_price": "284.19",
+      "amount": "6820.56"
+    }
+  ]
+}

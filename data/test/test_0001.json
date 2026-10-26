@@ -1,0 +1,25 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Indus Fasteners Inc",
+  "invoice_number": "INV00042",
+  "invoice_date": "2025-11-28",
+  "due_date": null,
+  "currency": "INR",
+  "subtotal": "46508.52",
+  "tax": "2325.42",
+  "total": "48833.94",
+  "line_items": [
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "22",
+      "unit_price": "80.43",
+      "amount": "1769.46"
+    },
+    {
+      "description": "Hydraulic oil 68 grade",
+      "quantity": "189.5",
+      "unit_price": "236.09",
+      "amount": "44739.06"
+    }
+  ]
+}

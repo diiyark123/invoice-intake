@@ -1,0 +1,37 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Jupiter Safety Equipment",
+  "invoice_number": "INV04270",
+  "invoice_date": "2026-05-31",
+  "due_date": "2026-06-15",
+  "currency": "INR",
+  "subtotal": "13046.50",
+  "tax": "652.32",
+  "total": "13698.82",
+  "line_items": [
+    {
+      "description": "Floor cleaning liquid 1L",
+      "quantity": "10",
+      "unit_price": "105.67",
+      "amount": "1056.70"
+    },
+    {
+      "description": "Stretch wrap film 500mm",
+      "quantity": "10",
+      "unit_price": "805.61",
+      "amount": "8056.10"
+    },
+    {
+      "description": "Corrugated carton box 18x12x10",
+      "quantity": "100",
+      "unit_price": "33.11",
+      "amount": "3311.00"
+    },
+    {
+      "description": "Packing tape 48mm x 65m",
+      "quantity": "10",
+      "unit_price": "62.27",
+      "amount": "622.70"
+    }
+  ]
+}

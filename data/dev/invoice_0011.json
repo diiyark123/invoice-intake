@@ -1,0 +1,19 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Fortune Steel Traders",
+  "invoice_number": "MS/26-27/7108",
+  "invoice_date": "2026-08-07",
+  "due_date": "2026-09-06",
+  "currency": "INR",
+  "subtotal": "2641.00",
+  "tax": "132.06",
+  "total": "2773.06",
+  "line_items": [
+    {
+      "description": "Corrugated carton box 18x12x10",
+      "quantity": "100",
+      "unit_price": "26.41",
+      "amount": "2641.00"
+    }
+  ]
+}

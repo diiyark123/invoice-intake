@@ -1,0 +1,31 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Orbit Courier Services Pvt Ltd",
+  "invoice_number": "MS/26-27/4942",
+  "invoice_date": "2026-04-05",
+  "due_date": "2026-05-20",
+  "currency": "INR",
+  "subtotal": "885.11",
+  "tax": "44.26",
+  "total": "929.37",
+  "line_items": [
+    {
+      "description": "A4 copier paper 75 GSM",
+      "quantity": "2",
+      "unit_price": "325.38",
+      "amount": "650.76"
+    },
+    {
+      "description": "Packing tape 48mm x 65m",
+      "quantity": "2",
+      "unit_price": "40.74",
+      "amount": "81.48"
+    },
+    {
+      "description": "Floor cleaning liquid 1L",
+      "quantity": "1",
+      "unit_price": "152.87",
+      "amount": "152.87"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Indus Fasteners Inc",
+  "invoice_number": "MS/26-27/0891",
+  "invoice_date": "2026-09-21",
+  "due_date": "2026-10-21",
+  "currency": "INR",
+  "subtotal": "20220.07",
+  "tax": "1011.00",
+  "total": "21231.07",
+  "line_items": [
+    {
+      "description": "Copper wire 2.5 sq mm",
+      "quantity": "197",
+      "unit_price": "26.46",
+      "amount": "5212.62"
+    },
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "162",
+      "unit_price": "65.67",
+      "amount": "10638.54"
+    },
+    {
+      "description": "LED tube light 20W",
+      "quantity": "3",
+      "unit_price": "318.94",
+      "amount": "956.82"
+    },
+    {
+      "description": "Shrink sleeves printing",
+      "quantity": "6",
+      "unit_price": "8.81",
+      "amount": "52.86"
+    },
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "1",
+      "unit_price": "3359.23",
+      "amount": "3359.23"
+    }
+  ]
+}

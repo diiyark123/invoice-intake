@@ -1,0 +1,37 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Jupiter Safety Equipment",
+  "invoice_number": "MS/25-26/3232",
+  "invoice_date": "2025-11-29",
+  "due_date": "2026-01-28",
+  "currency": "INR",
+  "subtotal": "14587.62",
+  "tax": "1750.52",
+  "total": "16338.14",
+  "line_items": [
+    {
+      "description": "Industrial degreaser 5L",
+      "quantity": "12",
+      "unit_price": "683.06",
+      "amount": "8196.72"
+    },
+    {
+      "description": "Corrugated carton box 18x12x10",
+      "quantity": "6",
+      "unit_price": "33.20",
+      "amount": "199.20"
+    },
+    {
+      "description": "Stretch wrap film 500mm",
+      "quantity": "3",
+      "unit_price": "454.34",
+      "amount": "1363.02"
+    },
+    {
+      "description": "Hydraulic oil 68 grade",
+      "quantity": "34",
+      "unit_price": "142.02",
+      "amount": "4828.68"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Lotus Printing Press",
+  "invoice_number": "B-69477",
+  "invoice_date": "2026-05-11",
+  "due_date": "2026-05-26",
+  "currency": "INR",
+  "subtotal": "68826.66",
+  "tax": "3441.34",
+  "total": "72268.00",
+  "line_items": [
+    {
+      "description": "Annual maintenance - printers",
+      "quantity": "1",
+      "unit_price": "6357.36",
+      "amount": "6357.36"
+    },
+    {
+      "description": "Hex bolt M10 x 50 (box of 100)",
+      "quantity": "100",
+      "unit_price": "590.75",
+      "amount": "59075.00"
+    },
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "1",
+      "unit_price": "3394.30",
+      "amount": "3394.30"
+    }
+  ]
+}

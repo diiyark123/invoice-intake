@@ -1,0 +1,37 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Evergreen Chemicals Ltd",
+  "invoice_number": "F-22084",
+  "invoice_date": "2026-08-16",
+  "due_date": null,
+  "currency": "INR",
+  "subtotal": "64185.35",
+  "tax": "11553.36",
+  "total": "75738.71",
+  "line_items": [
+    {
+      "description": "Nitrile safety gloves",
+      "quantity": "24",
+      "unit_price": "113.19",
+      "amount": "2716.56"
+    },
+    {
+      "description": "Courier charges - domestic",
+      "quantity": "3",
+      "unit_price": "225.81",
+      "amount": "677.43"
+    },
+    {
+      "description": "Pallet wooden 1200x1000",
+      "quantity": "50",
+      "unit_price": "932.80",
+      "amount": "46640.00"
+    },
+    {
+      "description": "Industrial degreaser 5L",
+      "quantity": "12",
+      "unit_price": "1179.28",
+      "amount": "14151.36"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Quartz Lab Instruments",
+  "invoice_number": "C-23298",
+  "invoice_date": "2026-01-11",
+  "due_date": "2026-02-10",
+  "currency": "INR",
+  "subtotal": "129173.24",
+  "tax": "15500.78",
+  "total": "144674.02",
+  "line_items": [
+    {
+      "description": "Fire extinguisher refill 4kg",
+      "quantity": "12",
+      "unit_price": "922.27",
+      "amount": "11067.24"
+    },
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "50",
+      "unit_price": "2362.12",
+      "amount": "118106.00"
+    }
+  ]
+}

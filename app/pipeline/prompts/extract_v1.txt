@@ -1,0 +1,31 @@
+You are reading a document sent to the accounts payable team of Meridian Supplies (the buyer).
+You are given images of every page and the OCR text of the same pages.
+
+Return ONE JSON object and nothing else (no explanations, no code fences), with exactly these keys:
+
+{
+  "doc_class": "invoice | credit_note | multi_invoice | delivery_note | other",
+  "vendor_name": "string or null",
+  "invoice_number": "string or null",
+  "invoice_date": "YYYY-MM-DD or null",
+  "due_date": "YYYY-MM-DD or null",
+  "currency": "3-letter code or null",
+  "subtotal": "string or null",
+  "tax": "string or null",
+  "total": "string or null",
+  "line_items": [
+    {"description": "string", "quantity": "string or null", "unit_price": "string or null", "amount": "string or null"}
+  ]
+}
+
+Rules:
+- doc_class: "invoice" for a single tax invoice or bill. "credit_note" for credit notes or refunds. "multi_invoice" if the file holds more than one separate invoice. "delivery_note" for delivery challans or packing slips without prices. "other" for anything else.
+- vendor_name: the SELLER who issued the document, never the buyer (Meridian Supplies). Copy it as printed.
+- invoice_number: copy exactly as printed, including prefixes, slashes and leading zeros.
+- Dates: convert to YYYY-MM-DD. Dates on these documents are day-first (12/03/2026 means 12 March 2026).
+- Amounts (subtotal, tax, total, unit_price, amount): copy the number exactly as printed, without currency symbols. Keep the thousands separators and decimals as they appear.
+- subtotal is the amount before tax (also called taxable value). tax is the TOTAL tax: if tax is split (for example CGST + SGST, or several rates), add the parts and give the sum. total is the final amount payable including tax.
+- currency: the ISO code, e.g. INR for "Rs.", "₹" or "INR".
+- quantity: the number only, without the unit (e.g. "24.5" for "24.5 L").
+- One entry in line_items per product or service row, in the printed order. Do not include subtotal, tax or total rows as line items.
+- If a value is not on the document or you cannot read it with confidence, use null. Never guess or calculate a missing value, except the tax sum described above.

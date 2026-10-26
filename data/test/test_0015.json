@@ -1,0 +1,55 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Meghna Food Services",
+  "invoice_number": "INV-2026-0922",
+  "invoice_date": "2026-08-22",
+  "due_date": "2026-09-06",
+  "currency": "INR",
+  "subtotal": "35334.87",
+  "tax": "6360.28",
+  "total": "41695.15",
+  "line_items": [
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "10",
+      "unit_price": "2895.44",
+      "amount": "28954.40"
+    },
+    {
+      "description": "A4 copier paper 75 GSM",
+      "quantity": "4",
+      "unit_price": "291.56",
+      "amount": "1166.24"
+    },
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "7.5",
+      "unit_price": "61.66",
+      "amount": "462.45"
+    },
+    {
+      "description": "Corrugated carton box 18x12x10",
+      "quantity": "2",
+      "unit_price": "63.30",
+      "amount": "126.60"
+    },
+    {
+      "description": "Canteen meal vouchers",
+      "quantity": "1",
+      "unit_price": "113.26",
+      "amount": "113.26"
+    },
+    {
+      "description": "Shrink sleeves printing",
+      "quantity": "12",
+      "unit_price": "4.71",
+      "amount": "56.52"
+    },
+    {
+      "description": "Fire extinguisher refill 4kg",
+      "quantity": "5",
+      "unit_price": "891.08",
+      "amount": "4455.40"
+    }
+  ]
+}

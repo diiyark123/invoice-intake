@@ -1,0 +1,55 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Pinnacle Uniforms",
+  "invoice_number": "0750231",
+  "invoice_date": "2026-08-27",
+  "due_date": "2026-10-26",
+  "currency": "INR",
+  "subtotal": "144429.65",
+  "tax": "25997.34",
+  "total": "170426.99",
+  "line_items": [
+    {
+      "description": "Canteen meal vouchers",
+      "quantity": "100",
+      "unit_price": "70.56",
+      "amount": "7056.00"
+    },
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "1",
+      "unit_price": "3647.23",
+      "amount": "3647.23"
+    },
+    {
+      "description": "Annual maintenance - printers",
+      "quantity": "12",
+      "unit_price": "6651.18",
+      "amount": "79814.16"
+    },
+    {
+      "description": "Pallet wooden 1200x1000",
+      "quantity": "50",
+      "unit_price": "1057.83",
+      "amount": "52891.50"
+    },
+    {
+      "description": "Corrugated carton box 18x12x10",
+      "quantity": "6",
+      "unit_price": "56.50",
+      "amount": "339.00"
+    },
+    {
+      "description": "Floor cleaning liquid 1L",
+      "quantity": "2",
+      "unit_price": "168.98",
+      "amount": "337.96"
+    },
+    {
+      "description": "Nitrile safety gloves",
+      "quantity": "3",
+      "unit_price": "114.60",
+      "amount": "343.80"
+    }
+  ]
+}

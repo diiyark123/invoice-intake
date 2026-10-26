@@ -1,0 +1,25 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Fortune Steel Traders",
+  "invoice_number": "MS/25-26/8514",
+  "invoice_date": "2025-11-10",
+  "due_date": "2025-12-25",
+  "currency": "INR",
+  "subtotal": "42702.00",
+  "tax": "5124.24",
+  "total": "47826.24",
+  "line_items": [
+    {
+      "description": "Pallet wooden 1200x1000",
+      "quantity": "20",
+      "unit_price": "1055.40",
+      "amount": "21108.00"
+    },
+    {
+      "description": "LED tube light 20W",
+      "quantity": "100",
+      "unit_price": "215.94",
+      "amount": "21594.00"
+    }
+  ]
+}

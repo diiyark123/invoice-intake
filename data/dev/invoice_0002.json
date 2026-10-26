@@ -1,0 +1,43 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Pinnacle Uniforms",
+  "invoice_number": "INV08134",
+  "invoice_date": "2026-10-02",
+  "due_date": "2026-11-01",
+  "currency": "INR",
+  "subtotal": "149053.48",
+  "tax": "17886.42",
+  "total": "166939.90",
+  "line_items": [
+    {
+      "description": "Annual maintenance - printers",
+      "quantity": "12",
+      "unit_price": "8290.10",
+      "amount": "99481.20"
+    },
+    {
+      "description": "A4 copier paper 75 GSM",
+      "quantity": "1",
+      "unit_price": "270.78",
+      "amount": "270.78"
+    },
+    {
+      "description": "Hydraulic oil 68 grade",
+      "quantity": "195",
+      "unit_price": "229.74",
+      "amount": "44799.30"
+    },
+    {
+      "description": "Nitrile safety gloves",
+      "quantity": "50",
+      "unit_price": "50.14",
+      "amount": "2507.00"
+    },
+    {
+      "description": "Floor cleaning liquid 1L",
+      "quantity": "20",
+      "unit_price": "99.76",
+      "amount": "1995.20"
+    }
+  ]
+}

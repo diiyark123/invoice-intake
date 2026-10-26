@@ -1,0 +1,31 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Ganga Electricals Pvt Ltd",
+  "invoice_number": "G-73274",
+  "invoice_date": "2026-06-30",
+  "due_date": "2026-07-30",
+  "currency": "INR",
+  "subtotal": "62441.30",
+  "tax": "7492.96",
+  "total": "69934.26",
+  "line_items": [
+    {
+      "description": "Nitrile safety gloves",
+      "quantity": "5",
+      "unit_price": "66.28",
+      "amount": "331.40"
+    },
+    {
+      "description": "LED tube light 20W",
+      "quantity": "24",
+      "unit_price": "192.06",
+      "amount": "4609.44"
+    },
+    {
+      "description": "Annual maintenance - printers",
+      "quantity": "6",
+      "unit_price": "9583.41",
+      "amount": "57500.46"
+    }
+  ]
+}

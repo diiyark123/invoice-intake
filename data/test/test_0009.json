@@ -1,0 +1,55 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Horizon IT Services",
+  "invoice_number": "0320720",
+  "invoice_date": "2025-12-23",
+  "due_date": "2026-01-07",
+  "currency": "INR",
+  "subtotal": "162705.51",
+  "tax": "8135.28",
+  "total": "170840.79",
+  "line_items": [
+    {
+      "description": "Stretch wrap film 500mm",
+      "quantity": "100",
+      "unit_price": "769.98",
+      "amount": "76998.00"
+    },
+    {
+      "description": "Copper wire 2.5 sq mm",
+      "quantity": "50.5",
+      "unit_price": "22.83",
+      "amount": "1152.92"
+    },
+    {
+      "description": "Industrial degreaser 5L",
+      "quantity": "2",
+      "unit_price": "1344.59",
+      "amount": "2689.18"
+    },
+    {
+      "description": "Fire extinguisher refill 4kg",
+      "quantity": "3",
+      "unit_price": "888.72",
+      "amount": "2666.16"
+    },
+    {
+      "description": "Canteen meal vouchers",
+      "quantity": "2",
+      "unit_price": "73.13",
+      "amount": "146.26"
+    },
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "343",
+      "unit_price": "73.97",
+      "amount": "25371.71"
+    },
+    {
+      "description": "Annual maintenance - printers",
+      "quantity": "4",
+      "unit_price": "13420.32",
+      "amount": "53681.28"
+    }
+  ]
+}

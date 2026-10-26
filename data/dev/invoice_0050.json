@@ -1,0 +1,19 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Bharat Packaging Co",
+  "invoice_number": "0184911",
+  "invoice_date": "2026-05-25",
+  "due_date": "2026-07-24",
+  "currency": "INR",
+  "subtotal": "3650.16",
+  "tax": "182.50",
+  "total": "3832.66",
+  "line_items": [
+    {
+      "description": "Courier charges - domestic",
+      "quantity": "6",
+      "unit_price": "608.36",
+      "amount": "3650.16"
+    }
+  ]
+}

@@ -1,0 +1,756 @@
+{
+  "run_at": "20261026T193404Z",
+  "note": "M5 dev analysis, prompt v1",
+  "dataset": "dev",
+  "config": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "extract_v1",
+    "confidence_threshold": 0.85,
+    "today": "2026-10-26"
+  },
+  "data": {
+    "files": 60,
+    "seeded_duplicates": 0,
+    "composition": "synthetic only (public-dataset and phone-photo samples not added yet)",
+    "generated_on": null
+  },
+  "metrics": {
+    "documents": 60,
+    "failed": 0,
+    "field_accuracy_overall": 0.9994,
+    "field_accuracy_header": 0.9979,
+    "field_accuracy_per_field": {
+      "currency": 1.0,
+      "due_date": 1.0,
+      "invoice_date": 1.0,
+      "invoice_number": 0.9833,
+      "line_items.amount": 1.0,
+      "line_items.description": 1.0,
+      "line_items.quantity": 1.0,
+      "line_items.unit_price": 1.0,
+      "subtotal": 1.0,
+      "tax": 1.0,
+      "total": 1.0,
+      "vendor_name": 1.0
+    },
+    "fields_compared": 1544,
+    "auto_approval_rate": 0.75,
+    "auto_approved": 45,
+    "wrong_field_rate_in_auto_approved": 0.0009,
+    "wrong_fields_in_auto_approved": 1,
+    "auto_approved_with_any_wrong_field": [
+      "invoice_0060.jpg"
+    ],
+    "duplicates_caught": "0/0",
+    "duplicates_missed": [],
+    "false_duplicate_flags": [],
+    "review_reason_counts": {
+      "low_confidence": 11,
+      "low_image_quality": 7,
+      "vendor_known": 7
+    },
+    "avg_processing_seconds": 4.52,
+    "cost_per_invoice_usd": 0.00162,
+    "projected_monthly_cost_usd": 3.23
+  },
+  "threshold_sweep": [
+    {
+      "threshold": 0.6,
+      "auto_approval_rate": 0.7667,
+      "wrong_field_rate_in_auto_approved": 0.0008,
+      "auto_approved_with_any_wrong_field": 1
+    },
+    {
+      "threshold": 0.65,
+      "auto_approval_rate": 0.75,
+      "wrong_field_rate_in_auto_approved": 0.0009,
+      "auto_approved_with_any_wrong_field": 1
+    },
+    {
+      "threshold": 0.7,
+      "auto_approval_rate": 0.75,
+      "wrong_field_rate_in_auto_approved": 0.0009,
+      "auto_approved_with_any_wrong_field": 1
+    },
+    {
+      "threshold": 0.75,
+      "auto_approval_rate": 0.75,
+      "wrong_field_rate_in_auto_approved": 0.0009,
+      "auto_approved_with_any_wrong_field": 1
+    },
+    {
+      "threshold": 0.8,
+      "auto_approval_rate": 0.75,
+      "wrong_field_rate_in_auto_approved": 0.0009,
+      "auto_approved_with_any_wrong_field": 1
+    },
+    {
+      "threshold": 0.85,
+      "auto_approval_rate": 0.75,
+      "wrong_field_rate_in_auto_approved": 0.0009,
+      "auto_approved_with_any_wrong_field": 1
+    },
+    {
+      "threshold": 0.9,
+      "auto_approval_rate": 0.7333,
+      "wrong_field_rate_in_auto_approved": 0.0009,
+      "auto_approved_with_any_wrong_field": 1
+    },
+    {
+      "threshold": 0.95,
+      "auto_approval_rate": 0.7333,
+      "wrong_field_rate_in_auto_approved": 0.0009,
+      "auto_approved_with_any_wrong_field": 1
+    }
+  ],
+  "documents": [
+    {
+      "file": "invoice_0001.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 4609,
+      "cost_usd": 0.00117,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0002.pdf",
+      "status": "needs_review",
+      "review_reasons": [
+        "vendor_known",
+        "low_confidence"
+      ],
+      "overall_confidence": 0.5,
+      "processing_ms": 2320,
+      "cost_usd": 0.00169,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0003.jpg",
+      "status": "needs_review",
+      "review_reasons": [
+        "low_image_quality"
+      ],
+      "overall_confidence": 0.8889,
+      "processing_ms": 3974,
+      "cost_usd": 0.00145,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0004.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 5060,
+      "cost_usd": 0.00222,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0005.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 4036,
+      "cost_usd": 0.00182,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0006.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 5130,
+      "cost_usd": 0.00195,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0007.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 4155,
+      "cost_usd": 0.00138,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0008.jpg",
+      "status": "needs_review",
+      "review_reasons": [
+        "low_image_quality",
+        "vendor_known",
+        "low_confidence"
+      ],
+      "overall_confidence": 0.5,
+      "processing_ms": 4792,
+      "cost_usd": 0.00119,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0009.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 5260,
+      "cost_usd": 0.00112,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0010.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 3375,
+      "cost_usd": 0.00214,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0011.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 6600,
+      "cost_usd": 0.0011,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0012.jpg",
+      "status": "needs_review",
+      "review_reasons": [
+        "vendor_known",
+        "low_confidence"
+      ],
+      "overall_confidence": 0.5,
+      "processing_ms": 7838,
+      "cost_usd": 0.002,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0013.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 2185,
+      "cost_usd": 0.00155,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0014.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 7098,
+      "cost_usd": 0.00157,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0015.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 5754,
+      "cost_usd": 0.00125,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0016.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 5984,
+      "cost_usd": 0.00139,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0017.jpg",
+      "status": "needs_review",
+      "review_reasons": [
+        "low_image_quality"
+      ],
+      "overall_confidence": 1.0,
+      "processing_ms": 4858,
+      "cost_usd": 0.00165,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0018.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 6193,
+      "cost_usd": 0.00205,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0019.pdf",
+      "status": "needs_review",
+      "review_reasons": [
+        "vendor_known",
+        "low_confidence"
+      ],
+      "overall_confidence": 0.5,
+      "processing_ms": 3537,
+      "cost_usd": 0.00158,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0020.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 3381,
+      "cost_usd": 0.00213,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0021.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 3555,
+      "cost_usd": 0.00219,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0022.jpg",
+      "status": "needs_review",
+      "review_reasons": [
+        "low_image_quality"
+      ],
+      "overall_confidence": 1.0,
+      "processing_ms": 7639,
+      "cost_usd": 0.00167,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0023.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 3114,
+      "cost_usd": 0.00188,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0024.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 2891,
+      "cost_usd": 0.00206,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0025.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 3308,
+      "cost_usd": 0.0017,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0026.pdf",
+      "status": "needs_review",
+      "review_reasons": [
+        "vendor_known",
+        "low_confidence"
+      ],
+      "overall_confidence": 0.5,
+      "processing_ms": 2946,
+      "cost_usd": 0.00189,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0027.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 2018,
+      "cost_usd": 0.00125,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0028.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 4658,
+      "cost_usd": 0.00204,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0029.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 3808,
+      "cost_usd": 0.0016,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0030.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 5039,
+      "cost_usd": 0.00122,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0031.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 3291,
+      "cost_usd": 0.00171,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0032.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 5994,
+      "cost_usd": 0.00217,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0033.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 9256,
+      "cost_usd": 0.00154,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0034.jpg",
+      "status": "needs_review",
+      "review_reasons": [
+        "low_image_quality"
+      ],
+      "overall_confidence": 1.0,
+      "processing_ms": 3948,
+      "cost_usd": 0.00126,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0035.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 6584,
+      "cost_usd": 0.00201,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0036.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 2805,
+      "cost_usd": 0.0017,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0037.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 4674,
+      "cost_usd": 0.00125,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0038.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 4563,
+      "cost_usd": 0.00155,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0039.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 3650,
+      "cost_usd": 0.00128,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0040.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 2457,
+      "cost_usd": 0.00152,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0041.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 4290,
+      "cost_usd": 0.00138,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0042.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 2978,
+      "cost_usd": 0.00201,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0043.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 3400,
+      "cost_usd": 0.00189,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0044.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 2613,
+      "cost_usd": 0.00128,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0045.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 0.875,
+      "processing_ms": 3221,
+      "cost_usd": 0.00121,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0046.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 5404,
+      "cost_usd": 0.00134,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0047.jpg",
+      "status": "needs_review",
+      "review_reasons": [
+        "low_confidence"
+      ],
+      "overall_confidence": 0.6087,
+      "processing_ms": 6614,
+      "cost_usd": 0.00168,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0048.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 3419,
+      "cost_usd": 0.00143,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0049.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 5905,
+      "cost_usd": 0.0016,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0050.pdf",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 3400,
+      "cost_usd": 0.00104,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0051.jpg",
+      "status": "needs_review",
+      "review_reasons": [
+        "low_image_quality",
+        "low_confidence"
+      ],
+      "overall_confidence": 0.0,
+      "processing_ms": 4063,
+      "cost_usd": 0.00108,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0052.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 5893,
+      "cost_usd": 0.00188,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0053.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 4922,
+      "cost_usd": 0.00123,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0054.pdf",
+      "status": "needs_review",
+      "review_reasons": [
+        "vendor_known",
+        "low_confidence"
+      ],
+      "overall_confidence": 0.5,
+      "processing_ms": 3486,
+      "cost_usd": 0.00206,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0055.jpg",
+      "status": "needs_review",
+      "review_reasons": [
+        "low_image_quality",
+        "low_confidence"
+      ],
+      "overall_confidence": 0.0,
+      "processing_ms": 4195,
+      "cost_usd": 0.00151,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0056.pdf",
+      "status": "needs_review",
+      "review_reasons": [
+        "vendor_known",
+        "low_confidence"
+      ],
+      "overall_confidence": 0.5,
+      "processing_ms": 3189,
+      "cost_usd": 0.00185,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0057.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 5897,
+      "cost_usd": 0.00216,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0058.jpg",
+      "status": "needs_review",
+      "review_reasons": [
+        "low_confidence"
+      ],
+      "overall_confidence": 0.0,
+      "processing_ms": 5052,
+      "cost_usd": 0.00167,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0059.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 5354,
+      "cost_usd": 0.00141,
+      "error": null,
+      "wrong_fields": []
+    },
+    {
+      "file": "invoice_0060.jpg",
+      "status": "auto_approved",
+      "review_reasons": [],
+      "overall_confidence": 1.0,
+      "processing_ms": 5459,
+      "cost_usd": 0.00134,
+      "error": null,
+      "wrong_fields": [
+        {
+          "field": "invoice_number",
+          "line": null,
+          "expected": "INV06061",
+          "got": "INVO6061"
+        }
+      ]
+    }
+  ]
+}

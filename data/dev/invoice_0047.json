@@ -1,0 +1,43 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Apex Industrial Supplies Pvt Ltd",
+  "invoice_number": "INV-2026-0747",
+  "invoice_date": "2026-05-27",
+  "due_date": "2026-07-11",
+  "currency": "INR",
+  "subtotal": "17348.52",
+  "tax": "867.42",
+  "total": "18215.94",
+  "line_items": [
+    {
+      "description": "Shrink sleeves printing",
+      "quantity": "2",
+      "unit_price": "4.97",
+      "amount": "9.94"
+    },
+    {
+      "description": "Safety helmet ISI marked",
+      "quantity": "20",
+      "unit_price": "385.00",
+      "amount": "7700.00"
+    },
+    {
+      "description": "Corrugated carton box 18x12x10",
+      "quantity": "6",
+      "unit_price": "52.21",
+      "amount": "313.26"
+    },
+    {
+      "description": "Stretch wrap film 500mm",
+      "quantity": "12",
+      "unit_price": "588.61",
+      "amount": "7063.32"
+    },
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "29",
+      "unit_price": "78.00",
+      "amount": "2262.00"
+    }
+  ]
+}

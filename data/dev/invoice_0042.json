@@ -1,0 +1,55 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Apex Industrial Supplies Pvt Ltd",
+  "invoice_number": "INV07467",
+  "invoice_date": "2025-12-18",
+  "due_date": null,
+  "currency": "INR",
+  "subtotal": "58480.08",
+  "tax": "10526.42",
+  "total": "69006.50",
+  "line_items": [
+    {
+      "description": "Hex bolt M10 x 50 (box of 100)",
+      "quantity": "2",
+      "unit_price": "562.95",
+      "amount": "1125.90"
+    },
+    {
+      "description": "Industrial degreaser 5L",
+      "quantity": "1",
+      "unit_price": "1173.95",
+      "amount": "1173.95"
+    },
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "270",
+      "unit_price": "73.71",
+      "amount": "19901.70"
+    },
+    {
+      "description": "Courier charges - domestic",
+      "quantity": "5",
+      "unit_price": "200.64",
+      "amount": "1003.20"
+    },
+    {
+      "description": "Copper wire 2.5 sq mm",
+      "quantity": "81",
+      "unit_price": "29.88",
+      "amount": "2420.28"
+    },
+    {
+      "description": "Annual maintenance - printers",
+      "quantity": "1",
+      "unit_price": "5299.61",
+      "amount": "5299.61"
+    },
+    {
+      "description": "Hydraulic oil 68 grade",
+      "quantity": "173",
+      "unit_price": "159.28",
+      "amount": "27555.44"
+    }
+  ]
+}

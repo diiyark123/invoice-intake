@@ -1,0 +1,49 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Lotus Printing Press",
+  "invoice_number": "INV-2026-2370",
+  "invoice_date": "2026-05-11",
+  "due_date": "2026-07-10",
+  "currency": "INR",
+  "subtotal": "215881.49",
+  "tax": "10794.08",
+  "total": "226675.57",
+  "line_items": [
+    {
+      "description": "Fire extinguisher refill 4kg",
+      "quantity": "12",
+      "unit_price": "554.18",
+      "amount": "6650.16"
+    },
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "9",
+      "unit_price": "67.57",
+      "amount": "608.13"
+    },
+    {
+      "description": "Courier charges - domestic",
+      "quantity": "20",
+      "unit_price": "321.68",
+      "amount": "6433.60"
+    },
+    {
+      "description": "Pallet wooden 1200x1000",
+      "quantity": "100",
+      "unit_price": "788.91",
+      "amount": "78891.00"
+    },
+    {
+      "description": "Canteen meal vouchers",
+      "quantity": "6",
+      "unit_price": "111.00",
+      "amount": "666.00"
+    },
+    {
+      "description": "Annual maintenance - printers",
+      "quantity": "20",
+      "unit_price": "6131.63",
+      "amount": "122632.60"
+    }
+  ]
+}

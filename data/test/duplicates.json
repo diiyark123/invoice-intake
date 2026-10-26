@@ -1,0 +1,27 @@
+[
+  {
+    "file": "test_0021.pdf",
+    "duplicate_of": "test_0001.pdf",
+    "kind": "exact_copy"
+  },
+  {
+    "file": "test_0022.pdf",
+    "duplicate_of": "test_0002.pdf",
+    "kind": "same_number_different_file"
+  },
+  {
+    "file": "test_0023.pdf",
+    "duplicate_of": "test_0003.pdf",
+    "kind": "number_variant"
+  },
+  {
+    "file": "test_0024.jpg",
+    "duplicate_of": "test_0004.pdf",
+    "kind": "rescanned_copy"
+  },
+  {
+    "file": "test_0025.pdf",
+    "duplicate_of": "test_0005.pdf",
+    "kind": "date_shift_2_days"
+  }
+]

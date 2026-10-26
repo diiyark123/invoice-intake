@@ -1,0 +1,49 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Riverstone Furniture Co",
+  "invoice_number": "0284367",
+  "invoice_date": "2026-02-13",
+  "due_date": "2026-04-14",
+  "currency": "INR",
+  "subtotal": "95055.50",
+  "tax": "11406.66",
+  "total": "106462.16",
+  "line_items": [
+    {
+      "description": "LED tube light 20W",
+      "quantity": "2",
+      "unit_price": "272.05",
+      "amount": "544.10"
+    },
+    {
+      "description": "Annual maintenance - printers",
+      "quantity": "12",
+      "unit_price": "6410.38",
+      "amount": "76924.56"
+    },
+    {
+      "description": "A4 copier paper 75 GSM",
+      "quantity": "5",
+      "unit_price": "279.17",
+      "amount": "1395.85"
+    },
+    {
+      "description": "Copper wire 2.5 sq mm",
+      "quantity": "96.5",
+      "unit_price": "45.33",
+      "amount": "4374.35"
+    },
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "108",
+      "unit_price": "74.90",
+      "amount": "8089.20"
+    },
+    {
+      "description": "Stretch wrap film 500mm",
+      "quantity": "6",
+      "unit_price": "621.24",
+      "amount": "3727.44"
+    }
+  ]
+}

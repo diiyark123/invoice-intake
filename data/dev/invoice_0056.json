@@ -1,0 +1,49 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Riverstone Furniture Co",
+  "invoice_number": "INV08709",
+  "invoice_date": "2026-01-11",
+  "due_date": "2026-02-25",
+  "currency": "INR",
+  "subtotal": "105565.34",
+  "tax": "19001.76",
+  "total": "124567.10",
+  "line_items": [
+    {
+      "description": "Nitrile safety gloves",
+      "quantity": "24",
+      "unit_price": "47.06",
+      "amount": "1129.44"
+    },
+    {
+      "description": "Courier charges - domestic",
+      "quantity": "5",
+      "unit_price": "255.08",
+      "amount": "1275.40"
+    },
+    {
+      "description": "Shrink sleeves printing",
+      "quantity": "4",
+      "unit_price": "4.69",
+      "amount": "18.76"
+    },
+    {
+      "description": "Hex bolt M10 x 50 (box of 100)",
+      "quantity": "6",
+      "unit_price": "777.12",
+      "amount": "4662.72"
+    },
+    {
+      "description": "Annual maintenance - printers",
+      "quantity": "12",
+      "unit_price": "8088.32",
+      "amount": "97059.84"
+    },
+    {
+      "description": "LED tube light 20W",
+      "quantity": "6",
+      "unit_price": "236.53",
+      "amount": "1419.18"
+    }
+  ]
+}

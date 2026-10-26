@@ -1,0 +1,49 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Kaveri Cleaning Supplies",
+  "invoice_number": "0126872",
+  "invoice_date": "2026-02-07",
+  "due_date": "2026-02-22",
+  "currency": "INR",
+  "subtotal": "8461.59",
+  "tax": "423.08",
+  "total": "8884.67",
+  "line_items": [
+    {
+      "description": "MS angle 40x40x5",
+      "quantity": "3",
+      "unit_price": "76.46",
+      "amount": "229.38"
+    },
+    {
+      "description": "Pallet wooden 1200x1000",
+      "quantity": "6",
+      "unit_price": "847.88",
+      "amount": "5087.28"
+    },
+    {
+      "description": "Shrink sleeves printing",
+      "quantity": "50",
+      "unit_price": "3.44",
+      "amount": "172.00"
+    },
+    {
+      "description": "Courier charges - domestic",
+      "quantity": "6",
+      "unit_price": "345.41",
+      "amount": "2072.46"
+    },
+    {
+      "description": "Corrugated carton box 18x12x10",
+      "quantity": "6",
+      "unit_price": "43.89",
+      "amount": "263.34"
+    },
+    {
+      "description": "Hex bolt M10 x 50 (box of 100)",
+      "quantity": "1",
+      "unit_price": "637.13",
+      "amount": "637.13"
+    }
+  ]
+}

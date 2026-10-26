@@ -1,0 +1,31 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Evergreen Chemicals Ltd",
+  "invoice_number": "G-58688",
+  "invoice_date": "2025-11-12",
+  "due_date": "2026-01-11",
+  "currency": "INR",
+  "subtotal": "5105.42",
+  "tax": "612.66",
+  "total": "5718.08",
+  "line_items": [
+    {
+      "description": "Laser toner cartridge",
+      "quantity": "1",
+      "unit_price": "3468.07",
+      "amount": "3468.07"
+    },
+    {
+      "description": "Nitrile safety gloves",
+      "quantity": "5",
+      "unit_price": "116.51",
+      "amount": "582.55"
+    },
+    {
+      "description": "Canteen meal vouchers",
+      "quantity": "10",
+      "unit_price": "105.48",
+      "amount": "1054.80"
+    }
+  ]
+}

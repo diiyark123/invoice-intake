@@ -1,0 +1,55 @@
+{
+  "doc_class": "invoice",
+  "vendor_name": "Jupiter Safety Equipment",
+  "invoice_number": "MS/26-27/5853",
+  "invoice_date": "2026-05-21",
+  "due_date": "2026-07-20",
+  "currency": "INR",
+  "subtotal": "47632.20",
+  "tax": "5715.86",
+  "total": "53348.06",
+  "line_items": [
+    {
+      "description": "Hydraulic oil 68 grade",
+      "quantity": "190",
+      "unit_price": "194.65",
+      "amount": "36983.50"
+    },
+    {
+      "description": "Canteen meal vouchers",
+      "quantity": "12",
+      "unit_price": "81.41",
+      "amount": "976.92"
+    },
+    {
+      "description": "Industrial degreaser 5L",
+      "quantity": "4",
+      "unit_price": "704.51",
+      "amount": "2818.04"
+    },
+    {
+      "description": "Shrink sleeves printing",
+      "quantity": "50",
+      "unit_price": "8.06",
+      "amount": "403.00"
+    },
+    {
+      "description": "Nitrile safety gloves",
+      "quantity": "24",
+      "unit_price": "109.49",
+      "amount": "2627.76"
+    },
+    {
+      "description": "Stretch wrap film 500mm",
+      "quantity": "3",
+      "unit_price": "456.30",
+      "amount": "1368.90"
+    },
+    {
+      "description": "Hex bolt M10 x 50 (box of 100)",
+      "quantity": "4",
+      "unit_price": "613.52",
+      "amount": "2454.08"
+    }
+  ]
+}
