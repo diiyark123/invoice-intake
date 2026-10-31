@@ -6,10 +6,12 @@ Reads supplier invoices (PDFs, scans, phone photos) with OCR + an LLM (Google Ge
 
 ## Run it locally (about 10 minutes)
 
+**Full step-by-step instructions, every `.env` setting explained, and troubleshooting: [docs/setup_guide.md](docs/setup_guide.md).** The short version:
+
 You need **Docker Desktop** and **git**. A Gemini API key is needed only for reading real invoices (free at aistudio.google.com/apikey).
 
 ```bash
-git clone <repo-url> invoice-intake && cd invoice-intake
+git clone https://github.com/diiyark123/invoice-intake.git && cd invoice-intake
 cp .env.example .env                      # Windows: Copy-Item .env.example .env
 # edit .env: paste your GEMINI_API_KEY, and set SESSION_SECRET to the output of
 #   python -c "import secrets; print(secrets.token_urlsafe(48))"
@@ -42,6 +44,7 @@ docker compose logs -f api                             # watch processing logs
 
 | Document | For |
 |---|---|
+| [docs/setup_guide.md](docs/setup_guide.md) | Running the project on your computer: first time, every time after, `.env`, commands, troubleshooting |
 | [docs/clerk_guide.md](docs/clerk_guide.md) | AP clerks: uploading and reviewing invoices (1 page) |
 | [docs/admin_runbook.md](docs/admin_runbook.md) | Deploying to Render + Cloudflare R2, keys, backups, troubleshooting |
 | [docs/architecture.md](docs/architecture.md) | How it works, with diagrams and design trade-offs |
