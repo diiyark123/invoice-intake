@@ -29,60 +29,15 @@ Docker Desktop must be **open and running** (whale icon in the menu bar) before 
 
 ## 2. First time on a computer
 
-Open **Terminal** and run these one by one.
+Follow **[local_setup.md](local_setup.md)**. It goes step by step from installing Docker to processing your first invoice, with a check after every step. In short:
 
-**Step 1: download the code**
 ```bash
-cd ~/Desktop
-git clone https://github.com/diiyark123/invoice-intake.git
-cd invoice-intake
-```
-Because the repo is private, git may ask you to log in:
-- **Username:** your GitHub username.
-- **Password:** a **personal access token**, not your GitHub password. Create one at github.com → *Settings → Developer settings → Personal access tokens → Tokens (classic) → Generate new token* with the `repo` box ticked.
-
-macOS remembers it after the first time.
-
-**Step 2: create your settings file**
-```bash
-cp .env.example .env
-python3 -c "import secrets; print(secrets.token_urlsafe(48))"
-```
-The second command prints a long random string. Open `.env` in any text editor (e.g. `open -e .env`) and fill in **two lines**:
-```
-GEMINI_API_KEY=<your Gemini key>
-SESSION_SECRET=<the long random string>
-```
-Leave everything else as it is. [Section 5](#5-the-env-file-explained) explains every line. Never share `.env` or commit it. Git already ignores it.
-
-**Step 3: build and start**
-```bash
-docker compose up -d --build
-```
-The first time this takes about 4–5 minutes (it downloads Python, Postgres and Tesseract). It starts three containers: `db`, `api` and `ui`. The database tables are created automatically.
-
-**Step 4: add the users and vendor list (first time only)**
-```bash
+git clone https://github.com/diiyark123/invoice-intake.git && cd invoice-intake
+cp .env.example .env            # then fill in GEMINI_API_KEY and SESSION_SECRET
+docker compose up -d --build    # first time ~4-5 minutes
 docker compose exec api python -m app.seed
 ```
-It should print `Seed complete, rows added: {'users': 2, 'vendors': 15, 'settings': 1}`.
-
-**Step 5: open the app**
-
-| What | Address |
-|---|---|
-| The app | http://localhost:8501 |
-| API docs (for developers) | http://localhost:8000/docs |
-| API health check | http://localhost:8000/health → should show `"database":"ok"` |
-
-Log in with:
-
-| Role | Email | Password |
-|---|---|---|
-| AP clerk | `clerk@meridian.test` | `clerk-demo-123` |
-| AP manager | `manager@meridian.test` | `manager-demo-123` |
-
-Try it: on **Upload**, choose a file from the `data/dev/` folder of the project. After a few seconds it shows *auto-approved* or *needs review*.
+Open http://localhost:8501 and log in as `clerk@meridian.test` / `clerk-demo-123` (manager: `manager@meridian.test` / `manager-demo-123`).
 
 ## 3. Every time after that
 
