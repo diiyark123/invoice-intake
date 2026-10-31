@@ -45,7 +45,7 @@ docker compose logs -f api                             # watch processing logs
 | Document | For |
 |---|---|
 | [docs/local_setup.md](docs/local_setup.md) | First-time setup from `git clone`: Docker, secrets in `.env`, database and login users, first invoice |
-| [docs/setup_guide.md](docs/setup_guide.md) | Running the project on your computer: first time, every time after, `.env`, commands, troubleshooting |
+| [docs/setup_guide.md](docs/setup_guide.md) | Day-to-day: starting, stopping, updating, where data lives, every `.env` setting, commands, troubleshooting |
 | [docs/clerk_guide.md](docs/clerk_guide.md) | AP clerks: uploading and reviewing invoices (1 page) |
 | [docs/admin_runbook.md](docs/admin_runbook.md) | Deploying to Render + Cloudflare R2, keys, backups, troubleshooting |
 | [docs/architecture.md](docs/architecture.md) | How it works, with diagrams and design trade-offs |
