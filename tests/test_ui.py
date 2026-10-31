@@ -321,3 +321,13 @@ def test_settings_save_sends_changes() -> None:
     sent = [c[1] for c in api.calls if c[0] == "update_settings"]
     assert sent and sent[0]["confidence_threshold"] == 0.9 and sent[0]["amount_tolerance"] == "0.01"
     assert "Settings saved." in [s.value for s in at.success]
+
+
+def test_badges_distinguish_unscored_and_blank() -> None:
+    from common import confidence_badge
+
+    assert confidence_badge(None, 0.85) == ":gray-badge[not scored]"
+    assert confidence_badge(None, 0.85, has_value=False) == ""
+    assert confidence_badge(0.9, 0.85) == ":green-badge[90% sure]"
+    assert confidence_badge(0.5, 0.85).startswith(":orange-badge")
+    assert confidence_badge(0.1, 0.85).startswith(":red-badge")

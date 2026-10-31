@@ -114,3 +114,26 @@ def test_failed_document_can_be_retried(api, invoice, session_factory) -> None:
     with session_factory() as s:
         entries = s.scalars(select(AuditLog).where(AuditLog.action == "retry")).all()
         assert len(entries) == 1 and "rate limited" in entries[0].old_value
+
+
+def test_retry_refused_when_original_file_is_gone(api, invoice, session_factory, tmp_path) -> None:
+    import uuid
+
+    from app.models import Document
+
+    client, state = api
+    headers = login(client)
+    state["fake"] = FakeLLMProvider(LLMError("rate limited"))
+    r = client.post(
+        "/documents",
+        headers=headers,
+        files=[("files", ("inv.pdf", invoice.file.read_bytes(), "application/pdf"))],
+    )
+    doc_id = r.json()[0]["document_id"]
+    with session_factory() as s:
+        key = s.get(Document, uuid.UUID(doc_id)).storage_key
+    (tmp_path / "storage" / key).unlink()
+
+    r = client.post(f"/documents/{doc_id}/retry", headers=headers)
+    assert r.status_code == 410 and "upload it again" in r.json()["detail"]
+    assert client.get(f"/documents/{doc_id}", headers=headers).json()["status"] == "failed"

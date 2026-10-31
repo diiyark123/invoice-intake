@@ -74,3 +74,29 @@ def test_seed_is_idempotent(db_session: Session) -> None:
     assert roles == {"clerk", "manager"}
     clerk = db_session.scalar(select(User).where(User.email == "clerk@meridian.test"))
     assert clerk.password_hash.startswith("$2"), "passwords are bcrypt-hashed"
+
+
+def test_production_requires_real_passwords(monkeypatch) -> None:
+    import pytest
+
+    from app.seed import SeedConfigError, _demo_users
+
+    monkeypatch.setenv("APP_ENV", "production")
+    monkeypatch.delenv("SEED_CLERK_PASSWORD", raising=False)
+    monkeypatch.delenv("SEED_MANAGER_PASSWORD", raising=False)
+    with pytest.raises(SeedConfigError, match="SEED_CLERK_PASSWORD"):
+        _demo_users()
+    monkeypatch.setenv("SEED_CLERK_PASSWORD", "short")
+    with pytest.raises(SeedConfigError, match="at least"):
+        _demo_users()
+
+
+def test_changed_password_env_resets_password(db_session: Session, monkeypatch) -> None:
+    from app.auth import verify_password
+
+    seed(db_session)
+    monkeypatch.setenv("SEED_CLERK_PASSWORD", "a-new-long-password")
+    seed(db_session)
+    clerk = db_session.scalar(select(User).where(User.email == "clerk@meridian.test"))
+    assert verify_password("a-new-long-password", clerk.password_hash)
+    assert not verify_password("clerk-demo-123", clerk.password_hash)

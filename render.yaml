@@ -1,0 +1,76 @@
+# Render Blueprint: Postgres + API + UI, all on the free plan.
+# Secrets marked `sync: false` are typed into the Render dashboard, never committed.
+# Free-tier limits (checked 2026-10-27): services sleep after 15 min idle (~1 min to wake),
+# 750 instance hours/month per workspace, the free database expires after 30 days,
+# and a service's local disk is wiped on restart (see STORAGE_BACKEND below).
+databases:
+  - name: invoice-db
+    plan: free
+    databaseName: invoice
+    user: invoice
+
+services:
+  - type: web
+    name: invoice-intake-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    # Migrations and the (idempotent) seed run on every start: free services have no shell.
+    dockerCommand: sh -c "alembic upgrade head && python -m app.seed && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: invoice-db
+          property: connectionString
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: APP_ENV # makes the seed refuse the public demo passwords
+        value: production
+      - key: LLM_PROVIDER
+        value: gemini
+      - key: LLM_MODEL
+        value: gemini-3.5-flash-lite
+      - key: LLM_MAX_TOKENS
+        value: "8000"
+      - key: GEMINI_API_KEY
+        sync: false
+      # Files: local disk for now (demo only). On the free plan this disk is WIPED on every
+      # restart, redeploy or sleep, so uploaded files and page images can disappear.
+      - key: STORAGE_BACKEND
+        value: local
+      - key: STORAGE_LOCAL_PATH
+        value: /app/storage
+      # To keep files permanently, switch to Cloudflare R2 (free up to 10 GB): delete the two
+      # entries above, uncomment the block below, and follow "Switch to Cloudflare R2" in
+      # docs/admin_runbook.md.
+      # - key: STORAGE_BACKEND
+      #   value: s3
+      # - key: S3_ENDPOINT_URL # https://<account-id>.r2.cloudflarestorage.com
+      #   sync: false
+      # - key: S3_BUCKET
+      #   sync: false
+      # - key: S3_ACCESS_KEY
+      #   sync: false
+      # - key: S3_SECRET_KEY
+      #   sync: false
+      # - key: S3_REGION
+      #   value: auto
+      - key: SEED_CLERK_PASSWORD # do NOT use the README demo passwords on a public URL
+        sync: false
+      - key: SEED_MANAGER_PASSWORD
+        sync: false
+      - key: TESSERACT_CMD
+        value: /usr/bin/tesseract
+
+  - type: web
+    name: invoice-intake-ui
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerCommand: sh -c "streamlit run ui/Home.py --server.address 0.0.0.0 --server.port $PORT --server.headless true"
+    envVars:
+      # Free services can't receive private-network traffic, so use the API's PUBLIC URL,
+      # e.g. https://invoice-intake-api.onrender.com (copy it from the API service page).
+      - key: API_BASE_URL
+        sync: false

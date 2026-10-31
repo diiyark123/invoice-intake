@@ -165,6 +165,10 @@ def retry_document(
     doc = _get_document(session, document_id)
     if doc.status != "failed":
         raise HTTPException(status.HTTP_409_CONFLICT, "Only failed documents can be retried")
+    if not deps.storage.exists(doc.storage_key):  # e.g. wiped by a restart on Render's free disk
+        raise HTTPException(
+            status.HTTP_410_GONE, "The original file is no longer stored. Please upload it again."
+        )
     audit.record(
         session,
         entity_type="document",

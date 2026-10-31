@@ -142,3 +142,20 @@ def test_non_invoice_gets_review_reason(session_factory, tmp_path, generated) ->
     with session_factory() as s:
         doc = s.get(Document, doc_id)
         assert doc.status == "needs_review" and "credit_note" in doc.review_reasons
+
+
+def test_restart_recovery_marks_interrupted_documents_failed(session_factory, tmp_path) -> None:
+    from app.pipeline.orchestrator import INTERRUPTED_MESSAGE, recover_interrupted
+
+    storage = LocalStorage(tmp_path / "storage")
+    stuck = add_document(session_factory, storage, b"%PDF-1.7")
+    done = add_document(session_factory, storage, b"%PDF-1.7")
+    with session_factory() as s:
+        s.get(Document, stuck).status = "processing"
+        s.get(Document, done).status = "approved"
+        s.commit()
+        assert recover_interrupted(s) == 1
+    with session_factory() as s:
+        assert s.get(Document, stuck).status == "failed"
+        assert s.get(Document, stuck).error_message == INTERRUPTED_MESSAGE
+        assert s.get(Document, done).status == "approved"

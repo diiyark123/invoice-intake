@@ -77,9 +77,11 @@ def status_badge(status: str) -> str:
     return f":{color}-badge[{label}]"
 
 
-def confidence_badge(conf: float | None, threshold: float) -> str:
+def confidence_badge(conf: float | None, threshold: float, has_value: bool = True) -> str:
+    if not has_value:
+        return ""
     if conf is None:
-        return ":gray-badge[not on page]"
+        return ":gray-badge[not scored]"
     if conf >= threshold:
         return f":green-badge[{conf:.0%} sure]"
     if conf >= threshold / 2:

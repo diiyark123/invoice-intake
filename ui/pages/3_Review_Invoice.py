@@ -127,7 +127,11 @@ with right:
         header_inputs: dict[str, str] = {}
         for name, label in FIELD_LABELS.items():
             f = header.get(name, {})
-            badge = confidence_badge(f.get("confidence"), threshold) if f else ""
+            badge = (
+                confidence_badge(f.get("confidence"), threshold, bool(f.get("value_text")))
+                if f
+                else ""
+            )
             header_inputs[name] = st.text_input(
                 f"{label} {badge}",
                 value=f.get("value_text") or "",

@@ -4,6 +4,7 @@ from decimal import Decimal
 from functools import lru_cache
 from typing import Literal
 
+from pydantic import field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -26,11 +27,21 @@ class Settings(BaseSettings):
     s3_bucket: str = ""
     s3_access_key: str = ""
     s3_secret_key: str = ""
+    s3_region: str = "auto"  # Cloudflare R2 uses "auto"
 
     session_secret: str = ""
     api_base_url: str = "http://localhost:8000"
     tesseract_cmd: str = "/usr/bin/tesseract"
     max_upload_mb: int = 15
+
+    @field_validator("database_url")
+    @classmethod
+    def _psycopg_driver(cls, url: str) -> str:
+        """Hosts like Render hand out postgres:// URLs; SQLAlchemy needs the psycopg driver."""
+        for prefix in ("postgres://", "postgresql://"):
+            if url.startswith(prefix):
+                return "postgresql+psycopg://" + url[len(prefix) :]
+        return url
 
     @property
     def resolved_llm_model(self) -> str:

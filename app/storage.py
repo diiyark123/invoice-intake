@@ -1,7 +1,7 @@
 """File storage behind one small interface: local folder in dev, S3-compatible bucket in prod."""
 
 from pathlib import Path
-from typing import Protocol
+from typing import Any, Protocol
 
 from app.config import Settings, get_settings
 
@@ -35,18 +35,23 @@ class LocalStorage:
 
 
 class S3Storage:
-    """S3-compatible storage (AWS S3, Cloudflare R2, Backblaze B2). Used from M6."""
+    """S3-compatible storage (Cloudflare R2 in production; also AWS S3, Backblaze B2)."""
 
-    def __init__(self, settings: Settings) -> None:
-        import boto3
-
+    def __init__(self, settings: Settings, client: Any = None) -> None:
+        if not settings.s3_bucket:
+            raise ValueError("STORAGE_BACKEND=s3 needs S3_BUCKET")
         self.bucket = settings.s3_bucket
-        self.client = boto3.client(
-            "s3",
-            endpoint_url=settings.s3_endpoint_url or None,
-            aws_access_key_id=settings.s3_access_key,
-            aws_secret_access_key=settings.s3_secret_key,
-        )
+        if client is None:
+            import boto3
+
+            client = boto3.client(
+                "s3",
+                endpoint_url=settings.s3_endpoint_url or None,
+                aws_access_key_id=settings.s3_access_key,
+                aws_secret_access_key=settings.s3_secret_key,
+                region_name=settings.s3_region,
+            )
+        self.client = client
 
     def save(self, data: bytes, key: str) -> None:
         self.client.put_object(Bucket=self.bucket, Key=key, Body=data)
@@ -60,8 +65,10 @@ class S3Storage:
         try:
             self.client.head_object(Bucket=self.bucket, Key=key)
             return True
-        except ClientError:
-            return False
+        except ClientError as exc:
+            if exc.response.get("Error", {}).get("Code") in ("404", "NoSuchKey", "NotFound"):
+                return False
+            raise  # permissions or network problems must not look like "file missing"
 
 
 def get_storage(settings: Settings | None = None) -> Storage:

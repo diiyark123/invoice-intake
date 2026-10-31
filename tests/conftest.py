@@ -8,6 +8,7 @@ from sqlalchemy.engine import make_url
 from sqlalchemy.orm import Session, sessionmaker
 
 os.environ.setdefault("SESSION_SECRET", "test-secret-not-for-production")
+os.environ["RECOVER_ON_STARTUP"] = "0"  # tests must not touch the dev database
 
 import random  # noqa: E402
 from datetime import date  # noqa: E402

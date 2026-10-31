@@ -17,6 +17,7 @@ from datetime import date
 from typing import Any
 
 from PIL import Image
+from sqlalchemy import select
 from sqlalchemy.orm import Session, sessionmaker
 
 from app.config import get_settings, llm_cost_usd
@@ -167,6 +168,22 @@ def _jpeg(image: Image.Image) -> bytes:
 
 
 # ---------- the pipeline ----------
+
+INTERRUPTED_MESSAGE = "Processing was interrupted by a server restart. Click Retry."
+
+
+def recover_interrupted(session: Session) -> int:
+    """Run at API startup: background tasks don't survive a restart, so anything still
+    'uploaded' or 'processing' was cut off. Mark it failed so Retry is offered (rule 3)."""
+    stuck = session.scalars(
+        select(Document).where(Document.status.in_(("uploaded", "processing")))
+    ).all()
+    for doc in stuck:
+        doc.status, doc.error_message = "failed", INTERRUPTED_MESSAGE
+    session.commit()
+    if stuck:
+        logger.warning("marked %d interrupted document(s) as failed", len(stuck))
+    return len(stuck)
 
 
 def process_document(document_id: uuid.UUID, deps: PipelineDeps | None = None) -> None:
